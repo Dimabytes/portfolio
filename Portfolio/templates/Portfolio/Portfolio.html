@@ -1,0 +1,56 @@
+{% extends 'templates/base/base.html' %}
+{% load staticfiles %}
+{% block title %}
+    Portfolio
+{% endblock %}
+{% block content %}
+    <body style="background-color: #212121">
+    <h2 class="Hi">Hi there! This is my portfolio! </h2>
+
+    <h1 class="At">At the moment {{ Count }} works are performed</h1>
+    <div class="lang_po">
+            <a id="EN_po" href="{% url 'portfolio:index' %}">EN</a>
+            <a id="RU_po" href="{% url 'portfolio_ru:index' %}">RU</a>
+    </div>
+    <div class="nav">
+            <a id="Nav" href="{% url 'main' %}">Back to main</a>
+    </div>
+
+<div class="container">
+{% for foo in card %}
+    <div class="card">
+        <div class="front"><img src="{{ foo.Slide_Photo.url }}"></div>
+        <div class="back">
+        <div class="mobile">
+            <h5>Iphone 6s</h5>
+            <img class='mobile_photo' src="{{ foo.Photo.url }}">
+        </div>
+        <div class="pre-info">
+        <div class="info">
+            <h1>{{ foo.Site_name }}</h1>
+            <h2>Date: {{ foo.Year }}</h2>
+            <h2><a href="{{ foo.Real_Link }}">This is Link!</a></h2>
+            <h2>Technologies: {% for kek in foo.Technologies.all %}
+                {{ kek.Technology}} {% endfor %}</h2>
+
+            <p>Description: {{ foo.Description }} </p>
+        </div>
+        </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    {% endblock %}
+
