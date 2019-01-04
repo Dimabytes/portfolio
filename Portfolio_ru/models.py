@@ -20,5 +20,7 @@ class work(models.Model):
     Description = models.TextField(null=True)
     id = models.AutoField(primary_key=True)
     Technologies = models.ManyToManyField(Technology)
+    def __str__(self):
+        return self.Site_name
 
 

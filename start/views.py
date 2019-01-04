@@ -17,8 +17,6 @@ def creative(request):
 
     return render(request, 'templates/MyWorks/index2.html')
 
-
-
 def boost(request):
 
     return render(request, 'templates/MyWorks/index1.html')
