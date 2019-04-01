@@ -48,6 +48,8 @@ INSTALLED_APPS = [
 
 ]
 
+DEBUG = False
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -127,14 +129,14 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 
-
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'django.dimabytes@gmail.com'
-EMAIL_HOST_PASSWORD = 'gogogo2001'
 DEFAULT_FROM_EMAIL = 'Dima'
 DEFAULT_TO_EMAIL = 'dimabytes@gmail.com'
+
+
 
 try:
     from .local_settings import *

@@ -3,6 +3,7 @@ idea
 venv
 venv2
 local_settings.py
+prod_settings.py
 */migrations/*
 __pycache__/
 */__pycache__/

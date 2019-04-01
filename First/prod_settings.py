@@ -17,6 +17,12 @@ DATABASES = {
     }
 }
 
+
+EMAIL_HOST_PASSWORD = 'gogogo2001'
+
+
 STATIC_ROOT = '/home/dimabytes/dsghij/static/'
 
 MEDIA_ROOT = '/home/dimabytes/dsghij/media/'
+
+SECRET_KEY = '#h3@whz9xh#4p#6*tlv-&!dap0p+q6xbm7snf69j+mr8i!_8(g'
