@@ -1,9 +1,13 @@
 from django import forms
-from .models import contact
+from .models import Contact
 
-class Connect_Form(forms.ModelForm):
+
+class ConnectForm(forms.ModelForm):
+    """
+    Form for connection at main page
+    """
     class Meta:
-        model = contact
+        model = Contact
         fields = ('email', 'Text', 'name')
 
     def __init__(self, *args, **kwargs):

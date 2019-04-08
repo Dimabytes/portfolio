@@ -2,6 +2,9 @@ from django.db import models
 
 
 class Technology(models.Model):
+    """
+        Model for Portfolio
+    """
     Technology = models.CharField(max_length=100, blank=True)
 
     def __str__(self):

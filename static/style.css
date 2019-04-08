@@ -334,6 +334,9 @@ a:hover { text-decoration: none; }
     border-radius: 10px;
     padding-bottom: 5px;
     font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -356,8 +359,8 @@ a:hover { text-decoration: none; }
 }
 .card{
     margin: 30px 20px 30px 20px ;
-    width: 576px;
-    height: 324px;
+    width: 748px;
+    height: 421px;
     perspective: 1000px;
 }
 .front, .back{
@@ -387,7 +390,7 @@ a:hover { text-decoration: none; }
 .pre-info{
     display: flex;
     width: 65.93425605536332%;
-    justify-content: center;
+    justify-content: flex-start;
     margin-left: 20px;
 }
 .info{
@@ -401,7 +404,7 @@ a:hover { text-decoration: none; }
     width: 29.06574394463668%;
 }
 .mobile_photo{
-    height: 300px;
+    height: 94%;
 }
 
 .card:hover .front{
@@ -470,6 +473,14 @@ a:hover { text-decoration: none; }
 .nav a{
     font-size: 1.7em;
     color: white;
+}
+
+.wrap_page_4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
 }
 
 
@@ -689,3 +700,55 @@ a:hover { text-decoration: none; }
         font-size: 1.2em;
     }
 }
+
+@media screen and (max-width: 1366px) {
+    .page1 h1 {
+        font-size: 10em;
+        font-weight: 500;
+
+    }
+
+    .page1 h2 {
+        font-size: 5em;
+        margin: 7vh 0 0 0;
+
+    }
+}
+    @media screen and (max-width: 1120px) {
+    .page1 h1 {
+        font-size: 7em;
+        font-weight: 500;
+
+    }
+
+    .page1 h2 {
+        font-size: 3em;
+        margin: 7vh 0 0 0;
+
+    }
+    @media screen and (max-width: 700px) {
+    .page1 h1 {
+        font-size: 6em;
+        font-weight: 500;
+
+    }
+
+    .page1 h2 {
+        font-size: 2em;
+        margin: 7vh 0 0 0;
+
+    }
+
+}   @media screen and (max-width: 465px) {
+        .page1 h1 {
+            font-size: 4em;
+            font-weight: 500;
+
+        }
+
+        .page1 h2 {
+            font-size: 1.2em;
+            margin: 7vh 0 0 0;
+
+        }
+    }}

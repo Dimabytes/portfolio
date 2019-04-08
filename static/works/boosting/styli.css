@@ -1,0 +1,780 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/ProximaNova-Bold.eot');
+    src: url('fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova-Bold.woff') format('woff'),
+    url('fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Proxima Nova Semibold';
+    src: url('fonts/ProximaNova-Semibold.eot');
+    src: url('fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova-Semibold.woff') format('woff'),
+    url('fonts/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Black';
+    src: url('fonts/ProximaNova-Black.eot');
+    src: url('fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova-Black.woff') format('woff'),
+    url('fonts/ProximaNova-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    background-color: white;
+    width: 100%;
+}
+body{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.banner{
+    background-image: url(img5/banner-back.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 26px 0 110px 0;
+
+}
+#banner_logo{
+    margin: 0 0 0 21%;
+}
+.logo-photo{
+    width: 190px ;
+}
+.boosting{
+    display: flex;
+    width: 100%;
+    margin: 100px 0 0 0;
+    align-items: center;
+    justify-content: center;
+
+}
+.left_boosting{
+    display: flex;
+    flex-direction: column;
+    width: 31.25%;
+    margin-right: 1px;
+}
+.left_boosting h2{
+    font-size: 22px;
+    color: rgb( 255, 255, 255 );
+    font-family: 'Roboto', sans-serif;
+    margin:35px 0 0 0 ;
+}
+
+.left_boosting h1{
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: bold;
+    color: white;
+    font-size: 56px;
+    }
+.get img{
+    width: 190px;
+
+}
+#banner{
+    margin: 70px 0 0 0;
+}
+#ba{
+    margin: 70px 0 0 0;
+}
+#ban{
+    margin: 70px 0 0 0;
+}
+#bann{
+     margin: 70px 0 0 0;
+ }
+
+#bannerr{
+    margin: 80px 0 0 0;
+}
+.right_boosting{
+    width: 35%;
+    min-width: 300px;
+}
+.right_boosting img{
+    width: 100%;
+}
+.why{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0 0;
+    justify-content: center;
+    align-items: center;
+}
+.why h2{
+    margin: 100px;
+    color: white;
+}
+.why h1{
+    font-size: 30px;
+    color: rgb( 255, 255, 255 );
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.screen_1{
+    background-image: url(img5/screen_1.png);
+    background-size: 31% auto;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 100px 0 0 0;
+    padding-bottom: 117px;
+}
+.screen_1_comp{
+    width: 27%;
+    align-self: flex-end;
+    min-width: 450px;
+}
+.screen_1_comp img{
+    width: 100%;
+    align-self: flex-end;
+}
+.screen_1_text{
+    width: 28.125%;
+    margin-left: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    top: -75px;
+}
+.screen_1_text h1{
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 30px;
+    color: black;
+
+}
+.screen_1_text h2{
+    font-family: 'Proxima Nova Black', sans-serif;
+    font-size: 323px;
+    color: #ebebf0;
+    line-height:0.8em;
+    margin-top: 50px;
+}
+.screen_1_comp h2{
+    font-family: 'Proxima Nova Black', sans-serif;
+    font-size: 323px;
+    color: #ebebf0;
+    line-height:0.8em;
+    margin-top: 50px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.screen_2{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: center;
+    margin: 260px 0 0 0;
+}
+.screen_2_comp{
+    width: 31%;
+    min-width: 470px;
+
+    margin-left: 5%;
+    align-self: flex-end;
+}
+.screen_2_comp img{
+    width: 100%;
+}
+.screen_2_text{
+    width: 28.125%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    top: -5px;
+}
+.screen_2_text h1{
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 30px;
+    color: black;
+
+}
+.screen_2_text h2{
+    font-family: 'Proxima Nova Black', sans-serif;
+    font-size: 323px;
+    color: #ebebf0;
+    line-height:0.8em;
+}
+.screen_2_comp h2{
+    font-family: 'Proxima Nova Black', sans-serif;
+    font-size: 323px;
+    color: #ebebf0;
+    line-height:0.8em;
+    margin-top: 50px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.screen_3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 520px 0 0 0;
+    padding-bottom: 120px;
+}
+.screen_3_comp{
+    width: 31%;
+    min-width: 480px;
+    align-self: flex-end;
+}
+.screen_3_comp img{
+    width: 100%;
+}
+.screen_3_text{
+    width: 28.125%;
+    margin-left: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.screen_3_text h1{
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 30px;
+    color: black;
+
+}
+.screen_3_text h2{
+    font-family: 'Proxima Nova Black', sans-serif;
+    font-size: 323px;
+    color: #ebebf0;
+    line-height:0.8em;
+}
+.screen_3_comp h2{
+    font-family: 'Proxima Nova Black', sans-serif;
+    font-size: 323px;
+    color: #ebebf0;
+    line-height:0.8em;
+    margin-top: 50px;
+    display: none;
+}
+
+
+
+.kek{
+    position: absolute;
+    right: 10px;
+}
+
+
+
+
+
+
+
+.screen_4{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: center;
+    margin: 128px 0 0 0;
+}
+.screen_4_comp{
+    width: 31%;
+    min-width: 480px;
+    margin-left: 7%;
+    align-self: flex-end;
+}
+.screen_4_comp img{
+    width: 100%;
+}
+.screen_4_text{
+    width: 29.6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.screen_4_text h1{
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 30px;
+    color: black;
+
+}
+.screen_4_text h2{
+    font-family: 'Proxima Nova Black', sans-serif;
+    font-size: 323px;
+    color: #ebebf0;
+    line-height:0.8em;
+}
+.screen_4_comp h2{
+    font-family: 'Proxima Nova Black', sans-serif;
+    font-size: 323px;
+    color: #ebebf0;
+    line-height:0.8em;
+    margin-top: 50px;
+    display: none;
+}
+
+
+
+footer{
+    width: 100%;
+    background-image: url(img5/footer.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 500px 0 80px 0;
+}
+.footer_info{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 61px;
+
+}
+.log{
+    width: 160px;
+}
+footer a{
+    margin-left: 20%;
+}
+.info{
+    margin-left: 19%;
+    font-size: 22px;
+    color: rgb( 255, 255, 255 );
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.info:hover{
+    border-bottom: 2px solid white;
+}
+footer h3{
+    text-align: center;
+    color: #c9c7fc;
+    font-size: 15px;
+}
+#rofl{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 1680px) {
+
+    .left_boosting h2{
+        font-size: 22px;
+    }
+    .left_boosting h1{
+        font-size: 40px;
+    }
+    .screen_1_text h1{
+        font-family: 'Proxima Nova Semibold', sans-serif;
+        font-size: 25px;
+        color: black;
+
+    }
+    .screen_1_text h2{
+        font-family: 'Proxima Nova Black', sans-serif;
+        font-size: 280px;
+        color: #ebebf0;
+        line-height:0.8em;
+    }
+    .screen_1_text {
+        width: 35.125%;
+    }
+    .screen_2_text h1{
+        font-family: 'Proxima Nova Semibold', sans-serif;
+        font-size: 25px;
+        color: black;
+
+    }
+    .screen_2_text h2{
+        font-family: 'Proxima Nova Black', sans-serif;
+        font-size: 280px;
+        color: #ebebf0;
+        line-height:0.8em;
+    }
+    .screen_2_text {
+        width: 35.125%;
+    }
+    .screen_3_text h1{
+        font-family: 'Proxima Nova Semibold', sans-serif;
+        font-size: 25px;
+        color: black;
+
+    }
+    .screen_3_text h2{
+        font-family: 'Proxima Nova Black', sans-serif;
+        font-size: 280px;
+        color: #ebebf0;
+        line-height:0.8em;
+    }
+    .screen_3_text {
+        width: 35.125%;
+    }
+    .screen_4_text h1{
+        font-family: 'Proxima Nova Semibold', sans-serif;
+        font-size: 25px;
+        color: black;
+
+    }
+    .screen_4_text h2{
+        font-family: 'Proxima Nova Black', sans-serif;
+        font-size: 280px;
+        color: #ebebf0;
+        line-height:0.8em;
+    }
+    .screen_4_text {
+        width: 35.125%;
+    }
+
+}
+@media screen and (max-width: 1370px) {
+
+    .left_boosting h2{
+        font-size: 18px;
+    }
+    .left_boosting h1{
+        font-size: 29px;
+    }
+    .screen_1{
+        background-image: none;
+    }
+    .kek{
+        display: none;
+    }
+    .screen_2{
+        margin: 200px 0 0 0;
+    }
+    .screen_3{
+        margin: 200px 0 0 0;
+    }
+    .screen_4{
+        margin: 200px 0 0 0;
+    }
+
+
+}
+@media screen and (max-width: 990px) {
+    .boosting{
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+    .right_boosting{
+        width: 48.4375%;
+    }
+    .left_boosting{
+        width: 48.4375%;
+        text-align: center;
+        margin-top: 37px;
+    }
+    #banner_logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 0;
+    }
+    .left_boosting h2{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .left_boosting h1{
+        font-size: 36px;
+    }
+    .get{
+        margin-top: 37px;
+    }
+    .why h2{
+        margin: 15px;
+    }
+    .why h1{
+        font-size: 20px;
+    }
+    .banner{
+        padding-bottom: 15px;
+    }
+
+
+
+
+
+
+
+
+
+    .screen_1{
+        flex-direction:column;
+        align-items: center;
+        margin: 56px 0 0 0;
+    }
+    .screen_1_comp{
+        align-self: auto;
+        min-width: 320px;
+    }
+    .screen_1_comp img{
+        align-self: auto;
+    }
+    .screen_1_text{
+        margin-left: 0px;
+        top: 0px;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .screen_1_text h1{
+        font-family: 'Proxima Nova Semibold', sans-serif;
+        font-size: 22px;
+        color: black;
+
+    }
+    .screen_1_text h2{
+        display: none;
+    }
+    .screen_1_comp {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .screen_1_comp h2 {
+        display: block;
+        font-size: 80px;
+        margin-top: 0;
+    }
+
+
+
+
+
+    .screen_2{
+        flex-direction:column;
+        align-items: center;
+        margin: 150px 0 0 0;
+    }
+    .screen_2_comp{
+        align-self: auto;
+        min-width: 320px;
+    }
+    .screen_2_comp img{
+        align-self: auto;
+    }
+    .screen_2_text{
+        margin-left: 0px;
+        top: 0px;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .screen_2_text h1{
+        font-family: 'Proxima Nova Semibold', sans-serif;
+        font-size: 22px;
+        color: black;
+
+    }
+    .screen_2_text h2{
+        display: none;
+    }
+    .screen_2_comp {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .screen_2_comp h2 {
+        display: block;
+        font-size: 80px;
+        margin-top: 0;
+    }
+
+
+
+
+    .screen_3{
+        flex-direction:column;
+        align-items: center;
+        margin: 150px 0 0 0;
+    }
+    .screen_3_comp{
+        align-self: auto;
+        min-width: 320px;
+    }
+    .screen_3_comp img{
+        align-self: auto;
+    }
+    .screen_3_text{
+        margin-left: 0px;
+        top: 0px;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .screen_3_text h1{
+        font-family: 'Proxima Nova Semibold', sans-serif;
+        font-size: 22px;
+        color: black;
+
+    }
+    .screen_3_text h2{
+        display: none;
+    }
+    .screen_3_comp {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .screen_3_comp h2 {
+        display: block;
+        font-size: 80px;
+        margin-top: 0;
+    }
+
+
+
+
+    .screen_4{
+        flex-direction:column;
+        align-items: center;
+        margin:150px 0 136px 0;
+    }
+    .screen_4_comp{
+        align-self: auto;
+        min-width: 320px;
+    }
+    .screen_4_comp img{
+        align-self: auto;
+    }
+    .screen_4_text{
+        margin-left: 0px;
+        top: 0px;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .screen_4_text h1{
+        font-family: 'Proxima Nova Semibold', sans-serif;
+        font-size: 22px;
+        color: black;
+
+    }
+    .screen_4_text h2{
+        display: none;
+    }
+    .screen_4_comp {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .screen_4_comp h2 {
+        display: block;
+        font-size: 80px;
+        margin-top: 0;
+    }
+    footer{
+        background-position: center bottom;
+        padding-top: 42px;
+        background-size: auto;
+    }
+    #lol{
+        display: none;
+    }
+    #rofl{
+        display: block;
+    }
+    .footer_info{
+        flex-direction: column;
+    }
+
+footer a{
+    margin-left: 0%;
+}
+.info{
+    margin: 16px 0 40px 0;
+    font-size: 22px;
+    color: rgb( 255, 255, 255 );
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.footer_info{
+    margin-bottom: 40px;
+}
+footer{
+    padding-bottom: 23px;
+}
+
+}
+@media screen and (max-width: 790px) {
+    .left_boosting h2{
+        font-size: 16px;
+    }
+    .left_boosting h1{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .left_boosting{
+        width: 90%;
+    }
+}

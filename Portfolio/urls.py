@@ -1,7 +1,7 @@
 
 from django.urls import path
-import Portfolio.views as Portfolio
+from Portfolio.views import Portfolio
 
 urlpatterns = [
-    path('', Portfolio.Portfolio_view, name='index'),
+    path('', Portfolio, name='portfolio'),
 ]

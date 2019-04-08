@@ -14,32 +14,20 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from main.views import main_view
-from main_ru.views import main_view as ru
-from start.views import my_view
-from start.views import port_view
-from start.views import boost
-from start.views import creative
-from start.views import google
-from Portfolio.views import Portfolio_view
+from django.urls import path, include
+from django.conf.urls.i18n import i18n_patterns  # translate
 from django.conf import settings
 from django.conf.urls.static import static
-from django.conf.urls import url, include
-import Portfolio.views as Portfolio
-import main.views as main
 
 
+# pages without translate
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', my_view, name='start'),
-    path('Portfolio/', port_view, name='port'),
-    path('en/', main_view, name='main'),
-    path('ru/', ru, name='main_ru'),
-    path('Portfolio_en/', include(('Portfolio.urls', 'Portfolio'), namespace='portfolio')),
-    path('Portfolio_ru/', include(('Portfolio_ru.urls', 'Portfolio_ru'), namespace='portfolio_ru')),
-    path('creative_agency/', creative, name='creative'),
-    path('boosting_agency/', boost, name='boost'),
-    path('google1f89f71bd985fbac.html/', google, name='google'),
+    path('works/', include('works.urls')),
 ]
+# pages with translate
+urlpatterns += i18n_patterns(
+    path('', include('main.urls')),
+    path('Portfolio/', include('Portfolio.urls')),
+) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

@@ -1,12 +1,15 @@
 from django.shortcuts import render
 from .models import work
+from django.views.generic import View
 
 
-def Portfolio_view(request):
-    Count = work.objects.count()
-    Start_Work_Info = reversed(work.objects.all())
-
-
-    return render(request, 'Portfolio/Portfolio.html', {'card': Start_Work_Info, 'Count': Count})
+class Portfolio(View):
+    """
+    View for main page
+    """
+    def get(self, request):
+        count = work.objects.count()
+        start_work_info = reversed(work.objects.all())
+        return render(request, 'Portfolio/Portfolio.html', {'card': start_work_info, 'Count': count})
 
 

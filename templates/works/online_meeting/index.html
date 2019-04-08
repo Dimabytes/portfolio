@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Всстреча</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'works/online_meeting/style.css'%}">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+</head>
+
+<body>
+<header>
+    <div class="head_wrap">
+        <h3>10 апреля в 20:00 <span><br>по московскому времени</span></h3>
+        <a href="#reg">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+    </div>
+
+</header>
+<div class="body_wrap">
+
+    <div class="first_block">
+        <img src="{% static 'works/online_meeting/img/main_pasp.png'%}">
+        <div class="how">
+            <h2>Бесплатная онлайн-встреча</h2>
+            <h1>Как быстро и легально стать
+                гражданином Российской
+                Федерации</h1>
+            <h3>с минимальными затратами и нулевыми рисками</h3>
+
+            <h4>Узнайте все условия и тонкости получения гражданства РФ
+                всего за 10 месяцев</h4>
+            <h5>Начало  –  <span>10 апреля в 20:00</span></h5>
+
+        </div>
+        <div class="things">
+            <div class="thing" id="mic">
+                <img src="{% static 'works/online_meeting/img/mic.svg'%}">
+                <p>Бесплатная
+                    консультация опытного
+                    специалиста</p>
+            </div>
+            <div class="thing" id="desk">
+                <img src="{% static 'works/online_meeting/img/desk.svg'%}">
+                <p>Детальный разбор<br>
+                    всех этапов, документов<br>
+                    от А до Я</p>
+            </div>
+            <div class="thing" id="conv">
+                <img src="{% static 'works/online_meeting/img/conv.svg'%}">
+                <p>Ответы на ваши
+                    вопросы в прямом
+                    эфире</p>
+            </div>
+            <div class="thing" id="gift">
+                <img src="{% static 'works/online_meeting/img/gift.svg'%}">
+                <p>Приятный подарок
+                    каждому участнику
+                    встречи</p>
+            </div>
+        </div>
+    </div>
+    <div class="have_to">
+        <img src="{% static 'works/online_meeting/img/shadow.png'%}" alt="" class="shadow">
+        <h1>Вам просто необходимо присоединиться<br>
+
+        </h1>
+        <h2>если хотите легализовать свое пребывание в РФ, но….</h2>
+        <div class="but">
+            <img src="{% static 'works/online_meeting/img/flag+pasp.png'%}">
+            <div class="facts">
+                <p class="fact">Вы не знаете, с чего начать процедуру  –  куда идти и какие документы собрать</p>
+                <p class="fact">Боитесь отказа в приеме документов в миграционном центре</p>
+                <p class="fact">Опасаетесь связаться с мошенниками и потерять деньги</p>
+                <p class="fact">Переживаете, что это затянется слишком надолго, и вы потеряете уйму времени</p>
+                <p class="fact">Вы плохо знакомы с законодательством и хотите владеть нужными знаниями</p>
+            </div>
+        </div>
+    </div>
+    <a name="reg"></a>
+    <div class="invite">
+        <img class="road_1" src="{% static 'works/online_meeting/img/road_1.png'%}">
+        <div class="invite_wrap">
+            <img src="{% static 'works/online_meeting/img/inv_img.svg'%}" alt="">
+            <div class="inv_text">
+                <h3>Примите учаcтие</h3>
+                <p>в онлайн-встрече с экспертом, получите ответы на свои вопросы и пошаговую инструкцию по получению<br>
+                    гражданства РФ</p>
+                <form>
+                    <input type="text" required name="name" class="Name_in" placeholder="Ваше Имя">
+                    <input type="email" required name="email" class="Email_in" placeholder="Ваш email">
+                    <input value="" style="display:none;" class="submit" type="submit">
+                    <div class="send">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+                </form>
+            </div>
+            <div class="thank" style="display: none">
+                <img src="{% static 'works/online_meeting/img/thank.png'%}">
+                <p>Спасибо за заявку!</p>
+                <p>В ближайшее время с Вами свяжется наш менеджер для уточнения данных. Удачного дня.</p>
+            </div>
+        </div>
+    </div>
+    <div class="program">
+        <img src="{% static 'works/online_meeting/img/road_2.png'%}" alt="" class="road_2">
+        <div class="program_wrap">
+            <img src="{% static 'works/online_meeting/img/line-min.png'%}" alt="">
+            <h2>В ПРОГРАММЕ ВСТРЕЧИ</h2>
+            <div class="content">
+                <div class="cont left">
+                    <img src="{% static 'works/online_meeting/img/teamwork.png'%}">
+                    <h4>Общие моменты</h4>
+                    <p>Кто может претендовать на получение гражданства</p>
+                </div>
+                <div class="cont right" id="docs">
+                    <img src="{% static 'works/online_meeting/img/file.png'%}">
+                    <h4>Необходимые документы</h4>
+                    <p>Полный пакет документов, которые вам нужно собрать для каждого частного случая.<br>
+                        Способы упростить этот процесс и кто может на них рассчитывать.</p>
+                </div>
+                <div class="cont left" id="buildings">
+                    <img src="{% static 'works/online_meeting/img/buildings.png'%}">
+                    <h4>Инстанции</h4>
+                    <p>Стадии и сроки, в которые нужно уложиться иностранным гражданам, чтобы соблюсти закон.<br>
+                        Обязательные этапы процедуры получения гражданства.
+                    </p>
+                </div>
+                <div class="cont right" id="scale">
+                    <img src="{% static 'works/online_meeting/img/scale.png'%}">
+                    <h4>Законы и ваши права</h4>
+                    <p>Какие существуют основания для получения гражданства в РФ.<br>
+                        Изменения в законодательстве РФ в 2019 году.
+                    </p>
+                </div>
+                <div class="cont left" id="attention">
+                    <img src="{% static 'works/online_meeting/img/attention.png'%}">
+                    <h4>Возможные<br>
+                        форс-мажорные ситуации</h4>
+                    <p>В каких случаях можно писать жалобы и как проходит процесс.<br>
+                        Как отстоять свои права при подаче документов в миграционный центр.</p>
+                </div>
+            </div>
+        </div>
+        <div class="speaker">
+            <img src="{% static 'works/online_meeting/img/speaker.png'%}" alt="">
+            <div class="speaker_info">
+                <h3>СПИКЕР - <br><span>АНДРЕЙ ГЕЛЕРМАН</span></h3>
+                <div class="text_info">
+                    <p>Эксперт, ведущий специалист организации  «Помощь мигрантам»</p>
+                    <p>Опыт более 3 лет</p>
+                    <p>Более 2000 довольных заявителей.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<script id="jquery" language="JavaScript" src="{% static 'works/online_meeting/scripts/jquery.js'%}"></script>
+<script language="JavaScript" src="{% static 'works/online_meeting/scripts/script.js'%}"></script>
+
+<footer>
+    <div class="footer_wrap">
+        <div class="footer_info">
+            <h3>КОЛИЧЕСТВО<br>
+                УЧАСТНИКОВ ОГРАНИЧЕНО<br>
+                <span>до 100 ЧЕЛОВЕК!</span>
+            </h3>
+            <p>
+                Регистрируйтесь на онлайн-встречу  –  вас ждут самые честные и актуальные сведения о получении российского гражданства
+            </p>
+        </div>
+        <div class="footer_text">
+            <h3>Оставьте свои данные</h3>
+            <p>и мы вышлем личное приглашение</p>
+            <form>
+                <input type="text" required name="name" class="Name_in" placeholder="Ваше Имя">
+                <input type="email" required name="email" class="Email_in" placeholder="Ваш email">
+                <input value="" style="display:none;" class="submit" type="submit">
+                <div class="send">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+            </form>
+        </div>
+        <div class="thank" style="display: none">
+            <img src="{% static 'works/online_meeting/img/thank.png'%}">
+            <p>Спасибо за заявку!</p>
+            <p>В ближайшее время с Вами свяжется наш менеджер для уточнения данных. Удачного дня.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

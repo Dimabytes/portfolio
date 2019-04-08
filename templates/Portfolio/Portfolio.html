@@ -1,0 +1,46 @@
+{% extends 'templates/base/base.html' %}
+{% load staticfiles %}
+{% load static i18n %}
+{% block title %}
+    Portfolio
+{% endblock %}
+{% block content %}
+    <body style="background-color: #212121;font-family: 'Roboto', sans-serif;">
+    <h2 class="Hi">{% trans 'Приветствую! Это моё портфолио!' %}</h2>
+
+    <h1 class="At">{% trans 'Работ выполнено:' %} {{ Count }}</h1>
+    <div class="lang_po">
+            <a id="EN_po" href="/en/Portfolio">EN</a>
+            <a id="RU_po" href="/ru/Portfolio">RU</a>
+    </div>
+    <div class="nav">
+            <a id="Nav" href="{% url 'main' %}">{% trans 'На главную' %}</a>
+    </div>
+
+
+<div class="container">
+{% for foo in card %}
+    <div class="card">
+        <div class="front"><img src="{{ foo.Slide_Photo.url }}"></div>
+        <div class="back">
+        <div class="mobile">
+            <h5>Iphone 6s</h5>
+            <img class='mobile_photo' src="{{ foo.Photo.url }}">
+        </div>
+        <div class="pre-info">
+        <div class="info">
+            <h1>{{ foo.Site_name }}</h1>
+            <h2>{% trans 'Дата:' %} {{ foo.Year }}</h2>
+            <h2><a href="{{ foo.Real_Link }}">{% trans 'Ссылка на работу' %}</a></h2>
+            <h2>{% trans 'Технологии:' %} {% for kek in foo.Technologies.all %}
+                {{ kek.Technology}} {% endfor %}</h2>
+
+            <p>{% trans 'Описание' %}: {{ foo.Description }} </p>
+        </div>
+        </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+
+    {% endblock %}
