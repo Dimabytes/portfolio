@@ -32,8 +32,16 @@ class Main(View):
     """
     def get(self, request):
         ip = get_ip(request)
-        if add_ip(ip, 1, 5):
-            send_message(ip)
+
+        try:
+            limit = add_ip(ip, 1, 5)
+        except BaseException:
+            limit = True
+        if limit:
+            try:
+                send_message(ip)
+            except BaseException:
+                pass
         last_works = work.objects.all().reverse()[:4]
         form = ConnectForm()
         return render(request, 'main/index.html', {'last_works': last_works, 'form': form})
