@@ -36,6 +36,7 @@ $(function() {
             url: 'contact/',
             data: data,
             success: function (data) {
+                alert('ЭКОЛОГИЯ - ЭТО НАУКА О ЖИВАОТНЫХ!')
             },
             error: function (data) {
             }
