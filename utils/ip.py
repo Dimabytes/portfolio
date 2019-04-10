@@ -37,12 +37,12 @@ def add_ip(ip, place, limit):
     day_now = datetime.datetime.today().day
     try:
         log = open(path, 'r')
-        if str(day_now) != log.readline():
+        if str(day_now) != str(log.readline())[:-1]:
             log.seek(0)
             log.truncate()
     except IOError:
         temp = open(path, 'w')
-        temp.write(str(day_now) + '\n')
+        temp.write(str(day_now) + ' \n')
         temp.close()
         log = open(path, 'r')
 
