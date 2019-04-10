@@ -1,3 +1,6 @@
+import datetime
+
+
 def get_ip(request):
     """
         function for getting ip by request from view
@@ -31,12 +34,18 @@ def add_ip(ip, place, limit):
     """
     add = True
     more_limit = True
+    day_now = datetime.datetime.today().day
     try:
         log = open(path, 'r')
+        if str(day_now) != log.readline():
+            log.seek(0)
+            log.truncate()
     except IOError:
         temp = open(path, 'w')
+        temp.write(str(day_now) + '\n')
         temp.close()
         log = open(path, 'r')
+
     for line in log:
         if ip in line:
             m = line.split(' ')
