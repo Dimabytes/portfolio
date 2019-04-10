@@ -34,7 +34,7 @@ class Main(View):
         ip = get_ip(request)
 
         try:
-            limit = add_ip(ip, 1, 5)
+            limit = add_ip(ip, 1, 2)
         except BaseException:
             limit = True
         if limit:
