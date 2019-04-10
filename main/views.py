@@ -5,6 +5,8 @@ from .forms import ConnectForm
 from django.template import loader
 from django.views.generic import View
 from django.http import HttpResponse, JsonResponse
+from utils.ip import get_ip, add_ip
+from utils.vk import send_message
 
 
 def mail(template, data, header, addressees):
@@ -29,6 +31,9 @@ class Main(View):
     View for main page
     """
     def get(self, request):
+        ip = get_ip(request)
+        if add_ip(ip, 1, 5):
+            send_message(ip)
         last_works = work.objects.all().reverse()[:4]
         form = ConnectForm()
         return render(request, 'main/index.html', {'last_works': last_works, 'form': form})
@@ -60,5 +65,6 @@ class Contact(View):
             mail('templates/mails/mail_to_en.html', data_for_user, 'Dimabytes', [email])
         mail('templates/mails/mail.html', data_for_me, 'Запрос на сайте', ['dimabytes@gmail.com'])
         return JsonResponse(data_for_user)
+
 
 

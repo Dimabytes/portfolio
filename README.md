@@ -17,8 +17,8 @@
 - SECRET_KEY
 - MEDIA_ROOT 
 - STATIC_ROOT / STATICFILES_DIRS
-
-MEDIA_ROOT = os.path.join(BASE_DIR, "media"),
+- VK_ACCESS = (str with access token for sending messages in vk.com)
+- MEDIA_ROOT = os.path.join(BASE_DIR, "media"),
 - EMAIL_HOST_PASSWORD
 
 
@@ -31,4 +31,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media"),
 - Portfolio. App for portfolio page.
 - static. Static folder.
 - templates. Folder with templates.
+- utils. Folder with helpless utils for the project.
 - works. App for pages with my works.
