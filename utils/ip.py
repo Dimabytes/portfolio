@@ -42,7 +42,7 @@ def add_ip(ip, place, limit):
             log.truncate()
     except IOError:
         temp = open(path, 'w')
-        temp.write(str(day_now) + ' \n')
+        temp.write(str(day_now) + '\n')
         temp.close()
         log = open(path, 'r')
 
@@ -59,6 +59,6 @@ def add_ip(ip, place, limit):
     log.close()
     if add:
         log = open(path, 'a')
-        log.write(ip + ' 1 \n')
+        log.write(ip + ' 1\n')
         log.close()
     return more_limit
