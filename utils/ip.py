@@ -52,13 +52,13 @@ def add_ip(ip, place, limit):
             m[place] = str(int(m[place]) + 1)
             if int(m[1]) > limit:
                 more_limit = False
-            replace_line = ' '.join(m) + ' \n'
+            replace_line = ' '.join(m)
             ReplaceLineInFile(path, line, replace_line)
             add = False
             break
     log.close()
     if add:
         log = open(path, 'a')
-        log.write(ip + ' 1\n')
+        log.write(ip + ' 1 \n')
         log.close()
     return more_limit
