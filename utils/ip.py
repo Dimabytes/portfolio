@@ -58,7 +58,7 @@ def add_ip(ip, place, limit):
             break
     log.close()
     if add:
-        log = open(path, 'w')
+        log = open(path, 'a')
         log.write(ip + ' 1\n')
         log.close()
     return more_limit
