@@ -7,7 +7,7 @@ class WorkAdmin(TranslationAdmin):
     class Media:
         js = (
             'modeltranslation/js/force_jquery.js',
-            'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js',
+            'scripts/jquery_ui.js',
             'modeltranslation/js/tabbed_translation_fields.js',
         )
         css = {
@@ -20,7 +20,7 @@ class TechnologyAdmin(TranslationAdmin):
     class Media:
         js = (
             'modeltranslation/js/force_jquery.js',
-            'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js',
+            'scripts/jquery_ui.js',
             'modeltranslation/js/tabbed_translation_fields.js',
         )
         css = {
