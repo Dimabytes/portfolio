@@ -11,7 +11,7 @@
     <h1 class="At">{% trans 'Работ выполнено:' %} {{ Count }}</h1>
     <div class="lang_po">
             <a id="EN_po" href="/en/Portfolio">EN</a>
-            <a id="RU_po" href="/ru/Portfolio">RU</a>
+            <a id="RU_po" href="/Portfolio">RU</a>
     </div>
     <div class="nav">
             <a id="Nav" href="{% url 'main' %}">{% trans 'На главную' %}</a>
@@ -30,10 +30,11 @@
         <div class="pre-info">
         <div class="info">
             <h1>{{ foo.Site_name }}</h1>
-            <h2>{% trans 'Дата:' %} {{ foo.Year }}</h2>
+            <h2>{% trans 'Дата:' %} {{ foo.Year|date:'Y.m.d' }}</h2>
             <h2><a href="{{ foo.Real_Link }}">{% trans 'Ссылка на работу' %}</a></h2>
             <h2>{% trans 'Технологии:' %} {% for kek in foo.Technologies.all %}
                 {{ kek.Technology}} {% endfor %}</h2>
+            <h2>{% trans 'Срок выполнения:' %} {{ foo.Period }}</h2>
 
             <p>{% trans 'Описание' %}: {{ foo.Description }} </p>
         </div>

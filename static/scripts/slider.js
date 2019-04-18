@@ -43,7 +43,7 @@ function prevSide(){
     }
 
 }
-setInterval(nextSlide, slideInterval);
+let s_int = setInterval(nextSlide, slideInterval);
 $(document).ready(function () {
     $('.slide-nav-btn').click(function() {
         navBtnId = $(this).index();
@@ -57,5 +57,14 @@ $(document).ready(function () {
             });
             SlideNow = navBtnId + 1;
         }
-    });
+        nav_now.css('background', '');
+
+    nav_now = $('#nav-btns li:nth-child('+ SlideNow +')');
+    nav_now.css('background', 'gray');
+    clearInterval(s_int);
+    setTimeout(function () {
+        s_int = setInterval(nextSlide, slideInterval);
+    }, 5000);
+
 });
+    });

@@ -1,12 +1,15 @@
 from django.shortcuts import render
-from Portfolio.models import work
+from Portfolio.models import Work
 from django.core.mail import send_mail
 from .forms import ConnectForm
+from .models import Contact as Connect_model
 from django.template import loader
 from django.views.generic import View
 from django.http import HttpResponse, JsonResponse
 from utils.ip import get_ip, add_ip
 from utils.vk import send_message
+from utils.info import IpInfo
+import datetime
 
 
 def mail(template, data, header, addressees):
@@ -32,17 +35,18 @@ class Main(View):
     """
     def get(self, request):
         ip = get_ip(request)
-
+        ip_info = IpInfo(ip)
         try:
             limit = add_ip(ip, 1, 2)
         except BaseException:
             limit = True
         if limit:
+            msg = ip_info.country + ', ' + ip_info.city + '. Ip is:' + str(ip)
             try:
-                send_message(ip)
+                send_message(msg)
             except BaseException:
                 pass
-        last_works = work.objects.all().reverse()[:4]
+        last_works = Work.objects.all().reverse()[:4]
         form = ConnectForm()
         return render(request, 'main/index.html', {'last_works': last_works, 'form': form})
 
@@ -55,10 +59,10 @@ class Contact(View):
         return HttpResponse('done')
 
     def post(self, request):
-        print(request.LANGUAGE_CODE)
         email = request.POST.get('email')
         name = request.POST.get('name')
         text = request.POST.get('text')
+        Connect_model(Text=text, email=email, name=name, date=datetime.datetime.now()).save()
         data_for_me = {
             'mail': email,
             'text': text,

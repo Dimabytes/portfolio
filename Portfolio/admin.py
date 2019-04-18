@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import work, Technology
+from .models import Work, Technology
 from modeltranslation.admin import TranslationAdmin
 
 
@@ -29,5 +29,5 @@ class TechnologyAdmin(TranslationAdmin):
     pass
 
 
-admin.site.register(work, WorkAdmin)
+admin.site.register(Work, WorkAdmin)
 admin.site.register(Technology, TechnologyAdmin)

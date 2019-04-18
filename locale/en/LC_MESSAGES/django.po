@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-03 21:54+0300\n"
+"POT-Creation-Date: 2019-04-13 18:41+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,11 @@ msgstr "This is Link!"
 msgid "Технологии:"
 msgstr "Technologies:"
 
-#: .\templates\Portfolio\Portfolio.html:38
+#: .\templates\Portfolio\Portfolio.html:37
+msgid "Срок выполнения:"
+msgstr "Period of execution:"
+
+#: .\templates\Portfolio\Portfolio.html:39
 msgid "Описание"
 msgstr "Description"
 
@@ -63,41 +67,42 @@ msgid ""
 "Я - профессиональный веб-разработчик. Помогу вам в создании прекрасного "
 "сайта. Быстро. Качественно. Надёжно."
 msgstr ""
-"I am a professional web developer. I will help you in creating the beautiful"
-"Site. Quickly. Qualitatively. Reliably."
+"I am a professional web developer. I will help you in creating the "
+"beautifulSite. Quickly. Qualitatively. Reliably."
 
 #: .\templates\main\index.html:5
 msgid "Профессиональный верстальщик Санкт-Петербург"
 msgstr "Professional layout designer St. Petersburg"
 
-#: .\templates\main\index.html:45
+#: .\templates\main\index.html:44
 msgid "Веб-дизайнер & разработчик"
 msgstr "Web-designer & developer"
 
-#: .\templates\main\index.html:53
+#: .\templates\main\index.html:52
 msgid "Кто я?"
 msgstr "Who am I?"
 
-#: .\templates\main\index.html:56
+#: .\templates\main\index.html:55
 msgid "Я молодой профессиональный веб-разработчик"
 msgstr "I am a young professional web developer."
 
-#: .\templates\main\index.html:56
+#: .\templates\main\index.html:55
 msgid "Я занимаюсь веб-разработкой на протяжении года"
 msgstr "I have been active in web development for over 1 year"
 
-#: .\templates\main\index.html:57
+#: .\templates\main\index.html:56
 msgid "Я могу выполнить Ваш заказ быстро и эффективно"
 msgstr "I can make your order quickly and efficiently."
 
-#: .\templates\main\index.html:57
+#: .\templates\main\index.html:56
 msgid ""
 "Я слежу за новыми трендами в веб-разработке, и помогу Вам создать "
 "великолепный сайт!"
-msgstr "I follow new trends in web development and can help you in creating great sites!"
+msgstr ""
+"I follow new trends in web development and can help you in creating great "
+"sites!"
 
-
-#: .\templates\main\index.html:62
+#: .\templates\main\index.html:61
 msgid "Мои навыки"
 msgstr "My skills"
 
@@ -120,10 +125,6 @@ msgstr "Contact me"
 #: .\templates\main\index.html:105
 msgid "Написать!"
 msgstr "Contact!"
-
-#: .\templates\main_en\index.html:44
-msgid "Web-designer & developer"
-msgstr ""
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
@@ -1287,3 +1288,6 @@ msgstr ""
 #: .\venv\Lib\site-packages\modeltranslation\widgets.py:25
 msgid "None"
 msgstr ""
+
+#~ msgid "Web-designer & developer"
+#~ msgstr "Веб дизайнер & разработчик"
