@@ -4,11 +4,13 @@ Django==2.0.7
 django-modeltranslation==0.13
 et-xmlfile==1.0.1
 idna==2.8
+IP2Location==8.0.3
 jdcal==1.4
 openpyxl==2.5.4
 Pillow==5.2.0
 psycopg2==2.7.7
 pytz==2018.5
 requests==2.21.0
+South==1.0.2
 urllib3==1.24.1
 xlrd==1.1.0
