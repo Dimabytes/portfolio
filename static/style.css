@@ -22,7 +22,7 @@ input { outline: none; }
 
 table { border-collapse: collapse; border-spacing: 0; }
 img { border: 0; max-width: 100%; }
-
+*:focus {outline:0;}
 a { text-decoration: none; }
 a:hover { text-decoration: none; }
 .page1{
@@ -100,7 +100,10 @@ a:hover { text-decoration: none; }
 
 
 
-
+.page3 .up_head{
+    font-size: 3.5em;
+    margin-bottom: 138px;
+}
 
 .page3{
     background-image: url(images/computer-1209641_1920.jpg);
@@ -117,11 +120,24 @@ a:hover { text-decoration: none; }
 
 }
 .page3 li {
-    list-style-image: url("images/correct2.png");
-    font-size: 2em;
+    font-size: 25px;
     margin-top: 15px;
     margin-left: 48px;
-    font-weight: 800;
+    font-weight: 100;
+    position: relative;
+    list-style: none;
+}
+.page3 li:before{
+    position: absolute;
+    background-image: url("images/correct2.png");
+    content: ' ';
+    background-repeat: no-repeat;
+	background-position: center center;
+   background-size: cover;
+    width: 23px;
+    height: 18px;
+    left: -28px;
+    top: 10px;
 }
 
 
@@ -484,9 +500,35 @@ a:hover { text-decoration: none; }
 }
 
 
+#id_Text, .mail, .name{
+    background: rgba(0, 0, 0, 0.5);
+}
 
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.skill{
+        margin: 0 100px 0 100px;
+    display: flex;
+    flex-direction: column;
+}
+.skill > p{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 
-
+}
+@media screen and (max-width: 1630px) {
+    .skill{
+        margin: 0 30px 0 30px;
+    }
+    .page3 .up_head{
+        margin-bottom: 0;
+    }
+}
 
 @media screen and (max-width: 1420px) {
     .up_head{
@@ -502,6 +544,12 @@ a:hover { text-decoration: none; }
         min-width: 200px;
         max-width: 400px;
     }
+    #block-for_slider{
+        width: 610px;
+    }
+    .up_head{
+        font-size: 1.5em;
+    }
 }
 @media screen and (max-width: 1250px) {
     .text_4{
@@ -511,6 +559,9 @@ a:hover { text-decoration: none; }
 @media screen and (max-width: 1200px) {
     .who p{
         font-size: 1.2em;
+    }
+    .skill{
+        margin-top: 30px;
     }
 }
 
@@ -558,6 +609,16 @@ a:hover { text-decoration: none; }
 
     .page4{
         text-align: center;
+        background-attachment: fixed;
+    }
+    .page3{
+        background-attachment: fixed;
+    }
+    .page2{
+        background-attachment: fixed;
+    }
+    .page5{
+        background-attachment: fixed;
     }
 
 
@@ -600,6 +661,9 @@ a:hover { text-decoration: none; }
     margin-top: 20vh;
 
 }
+    .page3 .up_head{
+        font-size: 1.2em;
+    }
 
 }
 @media screen and (max-width: 760px) {
@@ -620,6 +684,7 @@ a:hover { text-decoration: none; }
 .nav a{
     font-size: 1em;
 }
+
 
 }
 @media screen and (max-width: 620px) {
@@ -644,6 +709,17 @@ a:hover { text-decoration: none; }
 }
 .back h5{
     font-size: 15px;
+}
+.skill{
+    width: 100%;
+    margin-top: 10px;
+}
+.page3 li {
+    font-size: 17px;
+    margin-top: 7px;
+}
+.skill > p {
+    font-size: 17px;
 }
 }
 @media screen and (max-width: 600px) {
@@ -752,3 +828,4 @@ a:hover { text-decoration: none; }
 
         }
     }}
+

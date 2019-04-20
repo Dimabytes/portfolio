@@ -24,22 +24,12 @@ function animate(){
             $('#WhoText').removeClass('animated fadeInRight');
         }
         if($('.page3, .active').length == 1){
-            $('#1').addClass('animated fadeInLeft');
-            $('#2').addClass('animated fadeInRight');
-            $('#3').addClass('animated fadeInLeft');
-            $('#4').addClass('animated fadeInRight');
-            $('#5').addClass('animated fadeInLeft');
-            $('#6').addClass('animated fadeInRight');
-            $('#7').addClass('animated fadeInLeft');
+            $('.skills > .skill:nth-child(1)').addClass('animated fadeInLeft');
+            $('.skills > .skill:last-child').addClass('animated fadeInRight');
 
         } else {
-            $('#1').removeClass('animated fadeInLeft');
-            $('#2').removeClass('animated fadeInRight');
-            $('#3').removeClass('animated fadeInLeft');
-            $('#4').removeClass('animated fadeInRight');
-            $('#5').removeClass('animated fadeInLeft');
-            $('#6').removeClass('animated fadeInRight');
-            $('#7').removeClass('animated fadeInLeft');
+            $('.skills > .skill:nth-child(1)').removeClass('animated fadeInLeft');
+            $('.skills > .skill:last-child').removeClass('animated fadeInRight');
 
 
         }

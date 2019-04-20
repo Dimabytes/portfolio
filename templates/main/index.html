@@ -9,7 +9,7 @@
 {% block script %}
     <script type="text/javascript">
         {
-            if (screen.width > 1170) document.write('<link rel="stylesheet" type="text/css" href="{% static 'Style/onepage-scroll.css' %}">');
+            if (window.width > 1170) document.write('<link rel="stylesheet" type="text/css" href="{% static 'Style/onepage-scroll.css' %}">');
         }
     </script>
     <script type="text/javascript" src="{% static 'scripts/jquery.js' %}"></script>
@@ -19,20 +19,20 @@
     </script>
     <script type="text/javascript">
         {
-            if (screen.width > 1170) document.write('<script type="text/javascript" src="{% static 'scripts/jquery.onepage-scroll.js' %}" ></sc' + 'ript>');
+            if (window.width > 1170) document.write('<script type="text/javascript" src="{% static 'scripts/jquery.onepage-scroll.js' %}" ></sc' + 'ript>');
         }
     </script>
     <script>
-    if (screen.width > 1170) {
-        $(document).ready(function () {
-            $(".main").onepage_scroll({
-                updateURL: false,
-                pagination: false,
-                easing: "ease",
-                animationTime: 800,
+        if (screen.width > 1170) {
+            $(document).ready(function () {
+                $(".main").onepage_scroll({
+                    updateURL: false,
+                    pagination: false,
+                    easing: "ease",
+                    animationTime: 800,
+                });
             });
-        });
-    }
+        }
     </script>
 {% endblock %}
 {% block content %}
@@ -53,45 +53,67 @@
             <div class="who">
                 <img src="{% static 'images/Me.png' %}" id="Me">
                 <p id="WhoText">{% trans 'Я молодой профессиональный веб-разработчик' %}<br> {% trans 'Я занимаюсь веб-разработкой на протяжении года' %}<br>
-                    {% trans 'Я могу выполнить Ваш заказ быстро и эффективно' %}<br>{% trans 'Я слежу за новыми трендами в веб-разработке, и помогу Вам создать великолепный сайт!' %}</p>
+                    {% trans 'Я могу выполнить Ваш заказ быстро и эффективно' %}<br>{% trans 'Я слежу за новыми трендами в веб-разработке, и помогу Вам создать великолепный сайт!' %}
+                </p>
             </div>
         </section>
 
         <section class="page3">
             <h1 class="up_head">{% trans 'Мои навыки' %} <i class="fas fa-highlighter"> </i></h1>
             <div class="skills">
-                <ul>
-                    <li id="1">Python</li>
-                    <li id="2">Django</li>
-                    <li id="3">Javascript</li>
-                    <li id="4">Jquery</li>
-                    <li id="5">HTML5</li>
-                    <li id="6">CSS3</li>
-                    <li id="7">Canvas</li>
-                </ul>
+                <div class="skill">
+                    <p>Помощь с настройкой:</p>
+                    <ul>
+                        <li>Wordpress</li>
+                        <li>Prestashop</li>
+                        <li>Яндекс.Директ</li>
+                        <li>Google AdWords</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <p>Backend / frontend</p>
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>HTML5, CSS3</li>
+                        <li>Javascript, Jquery</li>
+                        <li>Canvas</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+
+                <div class="skill">
+                    <p>А так-же:</p>
+                    <ul>
+                        <li>VK и Telegram боты</li>
+                        <li>Консольные скрипты на python</li>
+                        <li>Photoshop, Illustrator, InDesign</li>
+                    </ul>
+                </div>
+
             </div>
         </section>
         <section class="page4">
-        <div class="wrap_page_4">
-            <h1 class="up_head text_4">{% trans 'Последние проекты' %} <i class="fas fa-briefcase"></i></h1>
-            <div id="block-for-slider">
-                <div id="viewport">
-                    <ul id="slidewrapper">
-                        {% for foo in last_works %}
-                            <li class="slide"><img src="{{ foo.Slide_Photo.url }}" alt="1" class="slide-img"></li>
-                        {% endfor %}
-                    </ul>
-                    <ul id="nav-btns">
-                        {% for foo in last_works %}
-                            <li class="slide-nav-btn"></li>
-                        {% endfor %}
-                    </ul>
+            <div class="wrap_page_4">
+                <h1 class="up_head text_4">{% trans 'Последние проекты' %} <i class="fas fa-briefcase"></i></h1>
+                <div id="block-for-slider">
+                    <div id="viewport">
+                        <ul id="slidewrapper">
+                            {% for foo in last_works %}
+                                <li class="slide"><img src="{{ foo.Slide_Photo.url }}" alt="1" class="slide-img"></li>
+                            {% endfor %}
+                        </ul>
+                        <ul id="nav-btns">
+                            {% for foo in last_works %}
+                                <li class="slide-nav-btn"></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
+                <h1 class="up_head 4_text">{% trans 'Чтобы увидеть больше, Вы можете перейти в' %} <a
+                        style="color: #757575; text-transform: uppercase"
+                        href="{% url 'portfolio' %}">{% trans 'портфолио' %}</a></h1>
             </div>
-            <h1 class="up_head 4_text">{% trans 'Чтобы увидеть больше, Вы можете перейти в' %} <a
-                    style="color: #757575; text-transform: uppercase"
-                    href="{% url 'portfolio' %}">{% trans 'портфолио' %}</a></h1>
-    </div>
         </section>
         <section class="page5">
 
