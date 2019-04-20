@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-13 18:41+0300\n"
+"POT-Creation-Date: 2019-04-20 20:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,27 +102,47 @@ msgstr ""
 "I follow new trends in web development and can help you in creating great "
 "sites!"
 
-#: .\templates\main\index.html:61
+#: .\templates\main\index.html:62
 msgid "Мои навыки"
 msgstr "My skills"
 
-#: .\templates\main\index.html:76
+#: .\templates\main\index.html:65
+msgid "Помощь с настройкой:"
+msgstr "Help with setting up"
+
+#: .\templates\main\index.html:69
+msgid "Яндекс.Директ"
+msgstr "Yandex.Direct"
+
+#: .\templates\main\index.html:86
+msgid "А так-же:"
+msgstr "And also:"
+
+#: .\templates\main\index.html:88
+msgid "VK и Telegram боты"
+msgstr "VK and Telegram bots"
+
+#: .\templates\main\index.html:89
+msgid "Консольные скрипты на python"
+msgstr "Console scripts in python"
+
+#: .\templates\main\index.html:98
 msgid "Последние проекты"
 msgstr "Last projects"
 
-#: .\templates\main\index.html:91
+#: .\templates\main\index.html:113
 msgid "Чтобы увидеть больше, Вы можете перейти в"
 msgstr "To see more you can go to the"
 
-#: .\templates\main\index.html:93
+#: .\templates\main\index.html:115
 msgid "портфолио"
 msgstr "portfolio"
 
-#: .\templates\main\index.html:98
+#: .\templates\main\index.html:120
 msgid "Свяжитесь со мной"
 msgstr "Contact me"
 
-#: .\templates\main\index.html:105
+#: .\templates\main\index.html:127
 msgid "Написать!"
 msgstr "Contact!"
 
