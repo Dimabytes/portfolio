@@ -9,7 +9,7 @@
 {% block script %}
     <script type="text/javascript">
         {
-            if (window.width > 1170) document.write('<link rel="stylesheet" type="text/css" href="{% static 'Style/onepage-scroll.css' %}">');
+            if (window.screen.width > 1170){ console.log('dfh'); document.write('<link rel="stylesheet" type="text/css" href="{% static 'Style/onepage-scroll.css' %}">');}
         }
     </script>
     <script type="text/javascript" src="{% static 'scripts/jquery.js' %}"></script>
@@ -19,7 +19,7 @@
     </script>
     <script type="text/javascript">
         {
-            if (window.width > 1170) document.write('<script type="text/javascript" src="{% static 'scripts/jquery.onepage-scroll.js' %}" ></sc' + 'ript>');
+            if (window.screen.width > 1170){ document.write('<script type="text/javascript" src="{% static 'scripts/jquery.onepage-scroll.js' %}" ></sc' + 'ript>');}
         }
     </script>
     <script>
