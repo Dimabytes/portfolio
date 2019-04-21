@@ -39,9 +39,9 @@ function animate(){
             $('#block-for-slider').removeClass('animated fadeInLeft');
         }
         if($('.page5, .active').length == 1){
-            $('form').addClass('animated fadeInLeft');
+            $('form').addClass('animated fadeInRight');
         } else {
-            $('form').removeClass('animated fadeInLeft');
+            $('form').removeClass('animated fadeInRight');
         }
 
 

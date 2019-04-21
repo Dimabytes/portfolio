@@ -1,3 +1,30 @@
+
+
+@font-face {
+font-family: 'Magistral';
+src: url('fonts/MagistralC.eot');
+src: url('fonts/MagistralC.eot?#iefix') format('embedded-opentype'),
+url('fonts/MagistralC.woff') format('woff'),
+url('fonts/MagistralC.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -34,12 +61,12 @@ a:hover { text-decoration: none; }
     background-color: white;
     display: flex;
     flex-direction: column;
-    font-family: 'Teko', sans-serif;
     justify-content: center;
     align-items: center;
     height:100vh;
 
 }
+
 .lang{
     position: absolute;
     bottom: 15px;
@@ -47,7 +74,7 @@ a:hover { text-decoration: none; }
 }
 .lang a{
     font-size: 2em;
-    color: black;
+    color: white;
 }
 #RU{
     margin: 0 20px 0 0;
@@ -55,12 +82,17 @@ a:hover { text-decoration: none; }
 .page1 h1{
     font-size: 11em;
     font-weight: 500;
+    font-family: 'Magistral', sans-serif;
+    text-align: center;
+    color: white;
 
 }
 .page1 h2{
     font-size: 6em;
     margin: 7vh 0 0 0;
-
+font-family: 'Magistral', sans-serif;
+    text-align: center;
+    color: white;
 }
 .page2{
     background-image: url(images/notebook-1280538_1920.jpg);
@@ -106,7 +138,7 @@ a:hover { text-decoration: none; }
 }
 
 .page3{
-    background-image: url(images/computer-1209641_1920.jpg);
+    background-image: url(images/office-865091_1920.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,8 +184,8 @@ a:hover { text-decoration: none; }
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(images/office-865091_1920.jpg);
-    background-position: center center;
+    background-image: url(images/skills.jpg);
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: white;
@@ -260,7 +292,7 @@ a:hover { text-decoration: none; }
     cursor: pointer;
 }
 .page4 a {
-    color: white;
+    color: black;
     font-weight: 800;
 }
 .page4 h1{
@@ -287,7 +319,7 @@ a:hover { text-decoration: none; }
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(images/632d61_a0857d766e904222a850663275c3eac6_mv2_d_4404_2477_s_4_2.jpg);
+    background-image: url(images/contact.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -609,16 +641,7 @@ a:hover { text-decoration: none; }
 
     .page4{
         text-align: center;
-        background-attachment: fixed;
-    }
-    .page3{
-        background-attachment: fixed;
-    }
-    .page2{
-        background-attachment: fixed;
-    }
-    .page5{
-        background-attachment: fixed;
+
     }
 
 
