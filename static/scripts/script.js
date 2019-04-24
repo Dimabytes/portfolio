@@ -25,20 +25,35 @@ $(function() {
 
 
     function send_form(button) {
+        let msg = button.parent().children('.Text').children('textarea').val()
         let data = {
             csrfmiddlewaretoken: csrftoken,
             email: button.parent().children('.email').children('input').val(),
             name: button.parent().children('.ename').children('input').val(),
-            text: button.parent().children('.Text').children('textarea').val(),
+            text: msg,
         };
+
+        $('.form_wrap').fadeOut(500);
+        setTimeout(function () {
+            $('.overlay-loader').fadeIn(500);
+        }, 500);
+
         $.ajax({
             type: "POST",
             url: 'contact/',
             data: data,
             success: function (data) {
-                alert('ЭКОЛОГИЯ - ЭТО НАУКА О ЖИВАОТНЫХ!')
+                setTimeout(function () {
+                $('.overlay-loader').fadeOut(200);
+                $('.after_send').fadeIn(500)
+                    }, 550);
             },
             error: function (data) {
+                setTimeout(function () {
+                $('.overlay-loader').fadeOut(200);
+                $('.after_send_2').fadeIn(500);
+                $('.after_send_2 span').text(msg)
+                    }, 1500);
             }
         });
 

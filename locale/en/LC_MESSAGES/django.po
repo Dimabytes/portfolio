@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-20 20:59+0300\n"
+"POT-Creation-Date: 2019-04-25 00:35+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: .\First\settings.py:130
 msgid "Russian"
-msgstr "He"
+msgstr ""
 
 #: .\First\settings.py:131
 msgid "English"
@@ -28,11 +28,11 @@ msgstr ""
 
 #: .\templates\Portfolio\Portfolio.html:9
 msgid "Приветствую! Это моё портфолио!"
-msgstr "Hi there! This is my portfolio!"
+msgstr "Hi there! It's my portfolio!"
 
 #: .\templates\Portfolio\Portfolio.html:11
 msgid "Работ выполнено:"
-msgstr "At the moment works are performed:"
+msgstr "Works completed"
 
 #: .\templates\Portfolio\Portfolio.html:17
 msgid "На главную"
@@ -41,6 +41,7 @@ msgstr "Back to main"
 #: .\templates\Portfolio\Portfolio.html:33
 msgid "Дата:"
 msgstr "Date:"
+
 
 #: .\templates\Portfolio\Portfolio.html:34
 msgid "Ссылка на работу"
@@ -58,7 +59,7 @@ msgstr "Period of execution:"
 msgid "Описание"
 msgstr "Description"
 
-#: .\templates\base\base.html:22
+#: .\templates\base\base.html:23
 msgid "Вертсальщик, Веб-разработчик, профессионал, Dimabytes, Санкт-Петербург"
 msgstr "Maker, Web Developer, Professional, Dimabytes, St. Petersburg"
 
@@ -75,8 +76,8 @@ msgid "Профессиональный верстальщик Санкт-Пет
 msgstr "Professional layout designer St. Petersburg"
 
 #: .\templates\main\index.html:44
-msgid "Веб-дизайнер & разработчик"
-msgstr "Web-designer & developer"
+msgid "Веб-разработчик"
+msgstr "Web-designer"
 
 #: .\templates\main\index.html:52
 msgid "Кто я?"
@@ -142,9 +143,29 @@ msgstr "portfolio"
 msgid "Свяжитесь со мной"
 msgstr "Contact me"
 
-#: .\templates\main\index.html:127
+#: .\templates\main\index.html:128
 msgid "Написать!"
 msgstr "Contact!"
+
+#: .\templates\main\index.html:143
+msgid "Спасибо за обращение! Я скоро Вам отвечу!"
+msgstr "Thanks for contacting me! I'll answer you soon!"
+
+#: .\templates\main\index.html:147
+msgid "Упс! Что то пошло не так :("
+msgstr "Ooops! Something went wrong :("
+
+#: .\templates\main\index.html:148
+msgid "Но вы всё ещё можете свзяаться со мной тут:"
+msgstr "But you still can contact with me here:"
+
+#: .\templates\main\index.html:149
+msgid "Почта: dimabytes@gmail.com"
+msgstr "E-mail: dimabytes@gmail.com"
+
+#: .\templates\main\index.html:151
+msgid "Ваше сообщение:"
+msgstr "Your message:"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
@@ -1308,6 +1329,3 @@ msgstr ""
 #: .\venv\Lib\site-packages\modeltranslation\widgets.py:25
 msgid "None"
 msgstr ""
-
-#~ msgid "Web-designer & developer"
-#~ msgstr "Веб дизайнер & разработчик"

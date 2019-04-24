@@ -43,7 +43,7 @@
             <h1>Dimabytes</h1>
             <h2>{% trans 'Веб-разработчик' %}</h2>
             <div class="lang">
-                <a id="RU" href="/ru/">RU</a>
+                <a id="RU" href="/">RU</a>
                 <a id="EN" href="/en/">EN</a>
             </div>
         </section>
@@ -110,7 +110,7 @@
                         </ul>
                     </div>
                 </div>
-                <h1 class="up_head 4_text">{% trans 'Чтобы увидеть больше, Вы можете перейти в' %} <a
+                <h1 class="up_head text_4">{% trans 'Чтобы увидеть больше, Вы можете перейти в' %} <a
                         style="text-transform: uppercase"
                         href="{% url 'portfolio' %}">{% trans 'портфолио' %}</a></h1>
             </div>
@@ -118,6 +118,7 @@
         <section class="page5">
 
             <h1 class="up_head">{% trans 'Свяжитесь со мной' %} <i class="far fa-address-book"></i></h1>
+            <div class="form_wrap">
             <form method="post" class="form">
                 {% csrf_token %}
                 <div class="email">{{ form.email }}</div>
@@ -127,6 +128,29 @@
                 <div class="btn send">{% trans 'Написать!' %}</div>
                 <button style="display: none" type="submit" class="btn"></button>
             </form>
+                </div>
+            <div class="overlay-loader">
+                <div class="loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div></div>
+    </div>
+            <div class="after_send">
+                <p>{% trans 'Спасибо за обращение! Я скоро Вам отвечу!' %}</p>
+                <img src="{% static 'images/thanks.svg' %}">
+            </div>
+            <div class="after_send_2">
+                <p>{% trans 'Упс! Что то пошло не так :(' %}
+                    <br> {% trans 'Но вы всё ещё можете свзяаться со мной тут:' %}
+                    <br>{% trans 'Почта: dimabytes@gmail.com' %}
+                    <br>Vk: <a href="https://vk.com/dimabytes">Dima Lol</a>
+                    <br> {% trans 'Ваше сообщение:' %}<span></span>
+                </p>
+            </div>
         </section>
 
 
