@@ -380,6 +380,16 @@ font-family: 'Magistral', sans-serif;
     align-items: center;
 
 }
+.form_wrap input, textarea{
+    width: 100%;
+}
+.form_wrap{
+    width: 90%;
+    max-width: 400px;
+}
+form{
+    width: 100%;
+}
 .btn{
     background-color: black;
     color: white;
@@ -808,9 +818,9 @@ font-family: 'Magistral', sans-serif;
     }
 }
 @media screen and (max-width: 1000px) {
-
     .page1, .page2, .page3, .page4, .page5{
         position: relative;
+        height: 850px;
     }
 
     .who img{
