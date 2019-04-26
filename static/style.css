@@ -936,10 +936,12 @@ form{
 .back h2{
     font-size: 13px;
     margin-top: 5px;
+    margin-left: 20px;
 }
 .back p{
-    font-size: 10px;
+    font-size: 11px;
     margin-top: 5px;
+    margin-left: 20px;
 }
 .back h5{
     font-size: 15px;
@@ -948,6 +950,9 @@ form{
     width: 100%;
     margin-top: 10px;
 }
+.pre-info{
+    margin-left: 0;
+}
 .page3 li {
     font-size: 17px;
     margin-top: 7px;
@@ -955,6 +960,20 @@ form{
 .skill > p {
     font-size: 17px;
 }
+.card {
+        width: 92%;
+    height: 165px;
+        margin-bottom: 60px;
+    }
+    .mobile{
+        display: none;
+    }
+    .pre-info{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 600px) {
 
@@ -984,10 +1003,8 @@ form{
 
 @media screen and (max-width: 413px) {
 
-    .card {
-        width: 282px;
-        height: 159px;
-    }
+
+
     .mobile_photo{
     height: 140px;
 }
