@@ -46,7 +46,7 @@ class Main(View):
                 send_message(msg)
             except BaseException:
                 pass
-        last_works = Work.objects.all().reverse()[:4]
+        last_works = Work.objects.all().order_by('-date')[:4]
         form = ConnectForm()
         return render(request, 'main/index.html', {'last_works': last_works, 'form': form})
 
