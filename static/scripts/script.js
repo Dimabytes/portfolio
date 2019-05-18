@@ -43,10 +43,15 @@ $(function() {
             url: 'contact/',
             data: data,
             success: function (data) {
+              if(data.limit === false){
+                alert('От Вас слишком много сообщений, подождите один день.')
+              } else {
                 setTimeout(function () {
                 $('.overlay-loader').fadeOut(200);
                 $('.after_send').fadeIn(500)
                     }, 550);
+              }
+
             },
             error: function (data) {
                 setTimeout(function () {

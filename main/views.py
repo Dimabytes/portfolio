@@ -59,24 +59,35 @@ class Contact(View):
         return HttpResponse('done')
 
     def post(self, request):
-        email = request.POST.get('email')
-        name = request.POST.get('name')
-        text = request.POST.get('text')
-        Connect_model(Text=text, email=email, name=name, date=datetime.datetime.now()).save()
-        data_for_me = {
-            'mail': email,
-            'text': text,
-            'name': name,
+        ip = get_ip(request)
+        try:
+            limit = add_ip(ip, 2, 2)
+        except BaseException:
+            print(222)
+            limit = True
+        if limit:
+            email = request.POST.get('email')
+            name = request.POST.get('name')
+            text = request.POST.get('text')
+            Connect_model(Text=text, email=email, name=name, date=datetime.datetime.now()).save()
+            data_for_me = {
+                'mail': email,
+                'text': text,
+                'name': name,
+            }
+            data_for_user = {
+                'name': name,
+            }
+            if request.LANGUAGE_CODE == 'ru':
+                mail('templates/mails/mail_to_ru.html', data_for_user, 'Dimabytes', [email])
+            else:
+                mail('templates/mails/mail_to_en.html', data_for_user, 'Dimabytes', [email])
+            mail('templates/mails/mail.html', data_for_me, 'Запрос на сайте', ['dimabytes@gmail.com'])
+            return JsonResponse(data_for_user)
+        data = {
+            'limit': False
         }
-        data_for_user = {
-            'name': name,
-        }
-        if request.LANGUAGE_CODE == 'ru':
-            mail('templates/mails/mail_to_ru.html', data_for_user, 'Dimabytes', [email])
-        else:
-            mail('templates/mails/mail_to_en.html', data_for_user, 'Dimabytes', [email])
-        mail('templates/mails/mail.html', data_for_me, 'Запрос на сайте', ['dimabytes@gmail.com'])
-        return JsonResponse(data_for_user)
+        return JsonResponse(data)
 
 
 
