@@ -1,0 +1,221 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Всстреча</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'works/talk/style.css'%}">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+</head>
+<script id="jquery" language="JavaScript" src="{% static 'works/talk/scripts/jquery.js'%}"></script>
+<script language="JavaScript" src="{% static 'works/talk/scripts/script.js'%}"></script>
+<body onscroll="header()">
+<div class="but_cont">
+    <div class="wrap">
+        <a class="join_us join_open f_join">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+    </div>
+
+</div>
+
+<header>
+
+    <div class="head_wrap">
+        <div>
+            <img src="{% static 'works/talk/img/logo.svg'%}" alt="" class="logo">
+            <h3>г. Москва, пл. Тверская застава д. 3, 4 этаж, оф. 410<br>
+                м.Белорусская (кольцевая)</h3>
+        </div>
+
+
+    </div>
+
+</header>
+<div style="display: none" class="send_form">
+
+    <div>
+        <img src="{% static 'works/talk/img/end.svg'%}" id="close">
+        <div class="before_send">
+            <h4>ЗАЯВКА</h4>
+            <p>Отправьте заявку, и в ближайшее время<br>
+                мы с Вами свяжемся!</p>
+            <form>
+                <input type="text" required name="name" class="Name_in" placeholder="Ваше Имя">
+                <input type="text" required name="phone" class="Phone_in" placeholder="Ваш телефон">
+                <input value="" style="display:none;" class="submit" type="submit">
+                <div class="send join_us"><p>ЗАПИСАТЬСЯ В ГРУППУ</p></div>
+            </form>
+        </div>
+        <div style="display: none" class="after_send">
+            <img src="{% static 'works/talk/img/notebook.svg'%}">
+            <p>Спасибо за<br> заявку</p>
+        </div>
+    </div>
+</div>
+<div class="im_wrap"><img class="flag" src="{% static 'works/talk/img/big_flag.png'%}"></div>
+<div class="body_wrap">
+
+
+    <div class="first_block">
+
+        <div class="how">
+            <h1>Разговорный <br> клуб<b><br></b>
+                турецкого языка</h1>
+            <h3>Ждем вас каждую пятницу <br> с 19:00 до 20:30 мск</h3>
+            <div class="join_us join_open">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+
+        </div>
+    </div>
+    <div class="leave">
+        <div class="blocks">
+            <div class="block">
+                <img src="{% static 'works/talk/img/talk.png'%}" alt="">
+                <p>Хотите свободно говорить по-турецки в путешествиях, по работе или с друзьями носителями языка?</p>
+            </div>
+            <div class="block ev">
+                <img src="{% static 'works/talk/img/conversation.png'%}" alt="">
+                <p>Вам не хватает практики общения на турецком и мечтаете пообщаться вживую с носителем языка?
+                </p>
+            </div>
+            <div class="block odd">
+                <img src="{% static 'works/talk/img/list.png'%}" alt="">
+                <p>Вы хотите совершенствовать свои знания и преодолеть языковой барьер? </p>
+            </div>
+
+            <div class="block odd ev">
+                <img src="{% static 'works/talk/img/team.png'%}" alt="">
+                <p>Вы знаете турецкий и хотите интересно и полезно провести пятничный вечер? </p>
+            </div>
+        </div>
+        <div class="let_us">
+            <h2>Оставляйте заявку на<br>
+                участие</h2>
+            <p>Собираетесь к нам впервые?<br>
+                Регистрируйтесь и получите доступ<b><br></b>к видео-курсу<br>
+                Хитит В ПОДАРОК</p>
+            <p>Подробнее о подарке <a href="#">здесь</a></p>
+            <div class="join_us join_open">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+        </div>
+
+    </div>
+    <img id="big" src="{% static 'works/talk/img/big.png'%}">
+    <div class="welcome">
+        <h2>Добро пожаловать в разговорный клуб<br>
+            турецкого языка от обучающего<br>
+            центра «Диалог»! </h2>
+        <div class="main">
+            <div></div>
+            <div class="text">
+                <h4>Здесь, в уютной обстановке, вы сможете:</h4>
+                <p>Отточить свои навыки живого общения на турецком языке</p>
+                <p>Обогатить словарный запас интересными словами и фразами</p>
+                <p>Преодолеть страх перед разговором на турецком</p>
+                <p>Использовать возможность высказать свою точку зрения на интересные темы</p>
+                <p>Улучшить произношение и акцент благодаря участию носителя язык</p>
+                <p>Получить уверенность в себе, своем уровне владения языком (и повысить его)</p>
+            </div>
+        </div>
+    </div>
+    <div class="how_it_goes">
+        <h2>Как проходят<br>
+            встречи в клубе</h2>
+        <div class="things">
+            <div class="thing">
+                <img src="{% static 'works/talk/img/teamwork.png'%}" alt="">
+                <h5>Формат</h5>
+                <p>Очные групповые занятия</p>
+            </div>
+            <div class="thing">
+                <img src="{% static 'works/talk/img/calendar.png'%}" alt="">
+                <h5>Интенсивоность</h5>
+                <p>Каждую пятницу</p>
+            </div>
+            <div class="thing">
+                <img src="{% static 'works/talk/img/alarm-clock.png'%}" alt="">
+                <h5>Время</h5>
+                <p>С 19:00 до 20:30 мск </p>
+            </div>
+            <div class="thing">
+                <img src="{% static 'works/talk/img/hourglass.png'%}" alt="">
+                <h5>Длительность<br> встречи</h5>
+                <p>90 минут</p>
+            </div>
+            <div id="lvl" class="thing">
+                <img src="{% static 'works/talk/img/employee.png'%}" alt="">
+                <h5>Уровень <span><br></span> владения<br> языком</h5>
+                <p>А1 и выше</p>
+            </div>
+            <div class="thing">
+                <img src="{% static 'works/talk/img/group.png'%}" alt="">
+                <h5>Количество<br> участников</h5>
+                <p>До 12 человек</p>
+            </div>
+        </div>
+    </div>
+    <div class="cost">
+
+        <div class="price">
+            <p>СТОИМОСТЬ<br>1-го урока</p>
+            <p>1 500 р</p>
+        </div>
+        <div class="price">
+            <p>АБОНЕМЕНТ НА МЕСЯЦ<br>(4 урока)</p>
+            <p>4 000 р</p>
+        </div>
+        <div class="price">
+            <p>АБОНЕМЕНТ НА 2 МЕСЯЦА<br>(8 уроков)</p>
+            <p>7 200 р</p>
+        </div>
+        <div class="join_us join_open">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+    </div>
+    <div class="headliner">
+        <img src="{% static 'works/talk/img/speaker.png'%}">
+        <div class="text">
+            <h3>Ведущий разговорного клуба – <br> <span>Озджан Озтурк</span></h3>
+            <p>Опыт работы в центре  –  <span>более 5 лет</span><br>
+                Ведет групповые и индивидуальные занятия<br>
+                <br>
+                Я работаю в языковом центре «Диалог» более двух лет. За это время многие мои студенты научились очень хорошо говорить на моем родном и любимом турецком языке. Я веду групповые и индивидуальные занятия.<br>
+                Люблю, когда атмосфера на занятиях располагает к тому, чтобы обучение проходило легко, но эффективно.<br>
+                Жду вас в нашей школе!</p>
+            <p>Записывайтесь заранее  –  количество мест<br>
+                на встрече ограничено!</p>
+        </div>
+    </div>
+    <div class="wait">
+        <div class="text">
+            <h5>Ждем вас в нашей теплой
+                компании уже в эту пятницу!</h5>
+
+            <p><span>Остались вопросы  –  задавайте их по телефонам:</span><br>
+                г. Москва, пл. Тверская застава д. 3, 4 этаж, оф. 410<br>
+                м.Белорусская (кольцевая)<br><br>
+                <span>Наш адрес</span><br>
+                +7 (495) 255-30-20
+
+            </p>
+        </div>
+    </div>
+    <img class="bot" src="{% static 'works/talk/img/bot.png'%}">
+    <div class="reg">
+        <h4>Регистрируйтесь<br>
+            здесь:</h4>
+        <form>
+            <input type="text" required name="name" class="Name_in" placeholder="Имя">
+            <input type="text" required name="phone" class="Phone_in" placeholder="Телефон">
+            <input value="" style="display:none;" class="submit" type="submit">
+            <div class="send join_us"><p>ЗАПИСАТЬСЯ В ГРУППУ</p></div>
+        </form>
+    </div>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

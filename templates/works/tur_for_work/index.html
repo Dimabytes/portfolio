@@ -1,0 +1,595 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Template</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'works/tur_for_work/style.css'%}">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+</head>
+
+
+<body onscroll="header()">
+
+
+<script id="jquery" language="JavaScript" src="{% static 'works/tur_for_work/scripts/jquery.js'%}"></script>
+<script language="JavaScript" src="{% static 'works/tur_for_work/scripts/script.js'%}"></script>
+<header>
+
+    <div class="head_wrap">
+        <div>
+            <img src="{% static 'works/tur_for_work/img/logo.svg'%}" alt="" class="logo">
+            <h3>Российский представитель TÖMER — центра изучения<br>
+                турецкого языка при госуниверситете Анкары. Имеем<br>
+                лицензию министерства образования РФ.
+            </h3>
+        </div>
+        <div class="second">
+            <p class="phone_num">+7 (495) 255-30-20</p>
+            <a class="join_us join_open f_join">
+                <p class="button_text">Заказать звонок</p>
+                <img class="button_img" src="{% static 'works/tur_for_work/img/button_phone.png'%}" alt="">
+            </a>
+        </div>
+
+
+    </div>
+
+</header>
+
+<div style="display: none" class="send_form">
+
+    <div class="wrap">
+        <img src="{% static 'works/tur_for_work/img/end.png'%}" id="close">
+        <div class="before_send">
+            <h4>ЗАЯВКА</h4>
+            <p>Отправьте заявку, и в ближайшее время<br>
+                мы с Вами свяжемся!</p>
+            <form>
+                <input type="text" required name="name" class="Name_in" placeholder="ВАШЕ ИМЯ">
+                <input type="email" required name="email" class="Email_in" placeholder="E-MAIL">
+                <input type="text" required name="phone" class="Phone_in" placeholder="ВАШ ТЕЛЕФОН">
+                <input value="" style="display:none;" class="submit" type="submit">
+                <a class="join_us send">
+                    <p class="button_text">Отправить звявку</p>
+                    <img class="button_img" src="{% static 'works/tur_for_work/img/button_click.png'%}" alt="">
+                </a>
+            </form>
+        </div>
+        <div style="display: none" class="after_send">
+            <img src="{% static 'works/tur_for_work/img/after.png'%}">
+            <p>Спасибо за<br> заявку</p>
+        </div>
+    </div>
+</div>
+<img src="{% static 'works/tur_for_work/img/head_flag.png'%}" class="first_flag">
+<img src="{% static 'works/tur_for_work/img/turkey-hand.png'%}" class="turkey-hand">
+<main>
+    <div class="first_block">
+        <p class="rb_med">2-месячный онлайн курс в формате “Заочник”</p>
+        <h1>Разговорный турецкий для жизни и работы</h1>
+        <p class="rb_med start">Начните легко говорить, писать, читать на турецком и понимать<br>
+            язык на слух в считанные недели, занимаясь в удобном для вас<br>
+            режиме</p>
+        <a class="join_us join_open f_join">
+            <p class="button_text">Хочу говорить на турецком</p>
+            <img class="button_img" src="{% static 'works/tur_for_work/img/button_click.png'%}" alt="">
+        </a>
+        <p class="rb_med">Только сегодня — специальная скидка 50%</p>
+
+    </div>
+    <div class="things">
+        <div class="thing">
+            <img src="{% static 'works/tur_for_work/img/classroom.png'%}">
+            <p>Технология обучения, проверенная более чем на 20 000 студентов</p>
+        </div>
+        <div class="thing">
+            <img src="{% static 'works/tur_for_work/img/exam.png'%}">
+            <p>Автоматическая проверка домашних заданий</p>
+        </div>
+        <div class="thing">
+            <img src="{% static 'works/tur_for_work/img/college-studying.png'%}">
+            <p>Простая система самообучения “Заочник”, подходящая также для начинающих</p>
+        </div>
+        <div class="thing">
+            <img src="{% static 'works/tur_for_work/img/free.png'%}">
+            <p>15 подробных уроков на самые распространенные разговорные темы </p>
+        </div>
+        <div class="thing">
+            <img src="{% static 'works/tur_for_work/img/music-social-group.png'%}">
+            <p>По методике языкового центра в Турции Tomer, адаптированной под русскоязычных студентов</p>
+        </div>
+    </div>
+    <div class="what_to_do">
+        <h3 class="gray_letters">Что делать...</h3>
+        <div class="wrap">
+            <img class="block_img" src="{% static 'works/tur_for_work/img/hat.png'%}" alt="">
+            <div class="text">
+                <p class="first_text">What to do...</p>
+                <h4 class="second_text">Что делать...</h4>
+                <p class="block_header">Что делать, когда турецкий нужен, а <span>времени</span> для интенсивного изучения <span>нет</span>?</p>
+                <p class="normal_text">Специально для таких ситуаций мы создали формат изучения турецкого “Заочник”, который позволит вам:</p>
+                <ul class="normal_table">
+                    <li>С удобной скоростью изучать турецкий (в удобное для вас время без спешки — смотрите уроки после работы или учебы, а также в транспорте).</li>
+                    <li class="mob_special_li">Сэкономить десятки тысяч рублей на школу или репетитора, а также на дорогостоящие онлайн курсы.</li>
+                    <li class="special_li">Постоянно иметь под рукой “шпаргалку” по разговорному турецкому языку, чтобы быстро повторить нужную ситуацию или диалог.</li>
+                    <li>С легкостью без спешки овладеть базовым уровнем разговорного турецкого и изучить 2000 слов за пару месяцев.</li>
+                    <li>Постоянно проверять свой уровень усвоения материала (за счет автоматической проверки ДЗ).</li>
+                    <li>Свободно начать общение на турецком с носителями языка и иметь хорошее произношение — без утомительных интенсивных занятий и зубрежек.</li>
+                </ul>
+                <a class="join_us join_open f_join">
+                    <p class="button_text">Принять участие</p>
+                    <img class="button_img" src="{% static 'works/tur_for_work/img/button_phone.png'%}" alt="">
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="for_you">
+        <h4 class="second_text">Этот онлайн-курс<br>для вас, если</h4>
+        <div class="tips">
+            <div class="tip girl">
+                <p class="gray_letters">1</p>
+                <img src="{% static 'works/tur_for_work/img/female-silhouette-talking.png'%}">
+                <p class="tip_text">Вы хотите изучать турецкий для повсaедневного общения и для работы</p>
+            </div>
+            <div class="tip">
+                <p class="gray_letters">2</p>
+                <img src="{% static 'works/tur_for_work/img/foursquare-button.png'%}">
+                <p class="tip_text">Вы читаете и понимаете немного по-турецки, но хотите быстрее заговорить на нем</p>
+            </div>
+            <div class="tip puzzle">
+                <p class="gray_letters">3</p>
+                <img src="{% static 'works/tur_for_work/img/puzzle.png'%}">
+                <p class="tip_text">Вы желаете самостоятельно изучать язык в своем темпе, не торопясь</p>
+            </div>
+            <div class="tip rocket">
+                <p class="gray_letters">4</p>
+                <img src="{% static 'works/tur_for_work/img/start-up.png'%}">
+                <p class="tip_text">Вы еще не изучали турецкий и хотите начать с чего-то максимально простого</p>
+            </div>
+            <div class="tip">
+                <p class="gray_letters">5</p>
+                <img src="{% static 'works/tur_for_work/img/tag.png'%}">
+                <p class="tip_text">Вам важно, чтобы курс турецкого был по приемлемой цене</p>
+            </div>
+            <div class="tip">
+                <p class="gray_letters">6</p>
+                <img src="{% static 'works/tur_for_work/img/verification-of-delivery-list-clipboard-symbol.png'%}">
+                <p class="tip_text">Вам нужна понятная проверенная система обучения</p>
+            </div>
+        </div>
+        <p class="block_header">Онлайн-курс “Разговорный турецкий для жизни и работы” в формате “Заочник” — это возможность <span>легко говорить, писать, читать на турецком и понимать язык на слух</span> уже через несколько недель, <span>занимаясь в удобном для вас режиме</span> </p>
+    </div>
+    <div class="system">
+        <div class="left_wrap">
+            <img class="sys_flag" src="{% static 'works/tur_for_work/img/flag_left.png'%}" alt="">
+        </div>
+
+        <h3 class="gray_letters">Система</h3>
+        <div class="wrap">
+
+            <div class="text">
+                <p class="first_text">learning system</p>
+                <h4 class="second_text">Это не очередной курс для самообучения.</h4>
+                <p class="block_header">Курс представляет собой <span>систему изучения турецкого языка</span> по методике официального языкового центра в Турции — TÖMER, <span>адаптированной под русскоязычных студентов.</span></p>
+                <p class="normal_text">Центр “Диалог” — российский представитель TÖMER, имеет лицензию министерства образования РФ и специализируется на преподавании турецкого языка и русского языка для турок.<br>
+                    <br>
+                    Данная система обучения развивает <span>сразу ЧЕТЫРЕ навыка</span> — чтение, восприятие, говорение, письмо. В результате <span>вы начинаете разговаривать на турецком</span>, понимать его на слух, читать и писать буквально <span>в считанные недели</span>.<br>
+                    <br>
+                    Такой подход позволяет надежно закрепить знание турецкого и дальше только усовершенствовать навыки.<br>
+                    <br>
+                    А самое главное — вы точно уверены в результате, ведь методика проверена уже более чем на <span>20 000 студентов</span>.
+                </p>
+
+            </div>
+            <img class="block_img" src="{% static 'works/tur_for_work/img/sert.png'%}" alt="">
+        </div>
+    </div>
+
+    <div class="center">
+        <h3 class="gray_letters">Центр<br>Обучения</h3>
+        <div class="wrap">
+            <img class="block_img" src="{% static 'works/tur_for_work/img/shield.png'%}" alt="">
+            <div class="text">
+                <p class="first_text">Training Center</p>
+                <h4 class="second_text">Центр обучения турецкому языку “Диалог”</h4>
+                <div class="tips">
+                    <div class="tip">
+                        <img src="{% static 'works/tur_for_work/img/election-event-on-a-calendar-with-star-symbol.png'%}">
+                        <p class="normal_text spec">Центр работает с 2005-го года</p>
+                    </div>
+                    <div class="tip">
+                        <img src="{% static 'works/tur_for_work/img/Layer%20887.png'%}">
+                        <p class="normal_text">Единственный представитель престижной сертификации Tomer при Анкарском университете</p>
+                    </div>
+                    <div class="tip">
+                        <img src="{% static 'works/tur_for_work/img/diploma.png'%}">
+                        <p class="normal_text">Сертифицирован и лицензирован Министерством образования</p>
+                    </div>
+                    <div class="tip">
+                        <img class="classroom" src="{% static 'works/tur_for_work/img/classroom.png'%}">
+                        <p class="normal_text">Более 20 <br> преподавателей-носителей и экспертов в турецком</p>
+                    </div>
+                </div>
+
+                <a class="join_us join_open f_join">
+                    <p class="button_text">Да, я хочу говорить по-турецки</p>
+                    <img class="button_img" src="{% static 'works/tur_for_work/img/button_click.png'%}" alt="">
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="advantages">
+        <h3 class="gray_letters">Преимущества</h3>
+        <div class="wrap">
+            <div class="text">
+                <p class="first_text">Advantages</p>
+                <h4 class="second_text">Получите сразу 4 преимущества в изучении турецкого</h4>
+
+                <div class="tips">
+                    <div class="tip">
+                        <h5 class="block_header">Основательное знание<br>
+                            турецкого</h5>
+                        <p class="normal_text">В отличие от других курсов, где развивают обычно 2-3 навыка и делают упор на зубрежку, с нами вы развиваете сразу 4 навыка — говорение, восприятие, чтение, письмо.
+                            <br><br>
+                            Программа видеоуроков построена так, что вы начинаете <span>говорить на турецком в считанные недели.</span></p>
+                    </div>
+                    <div class="tip">
+                        <h5 class="block_header">Не нужно ничего искать — все в одном месте</h5>
+                        <p class="normal_text">Не придется покупать сотни курсов, и тратить в 10 раз больше денег. У нас собраны ключевые бытовые темы с основными грамматическими правилами, которые вам необходимы для комфортного общения на турецком. Ничего лишнего — только то, что вам пригодится в общении с турками.
+                            <br><br>
+                            Вы <span>экономите массу сил и денег</span>, получая структурированную информацию, чтобы <span>заговорить по-турецки через несколько недель.</span></p>
+                    </div>
+                    <div class="tip">
+                        <h5 class="block_header mob_spec">Экономия времени за счет самостоятельного обучения</h5>
+                        <p class="normal_text">Вам достаточно приобрести доступ к курсу, и не нужно никуда ходить и ездить. Занимайтесь дома в удобное время.
+                            <br><br>
+                            Впоследствии вы можете взять и повторить любой урок, освежив в памяти лексику.
+                            <br><br>
+                            <span>Вы изучаете турецкий в своем темпе</span> и не торопясь тщательно изучаете каждую тему.</p>
+                    </div>
+                    <div class="tip">
+                        <h5 class="block_header mob_spec">Вы выучите 2000 слов и заговорите на турецком в ближайшее время</h5>
+                        <p class="normal_text">При обучении у нас вы получаете сильную платформу знаний для дальнейшего самостоятельного изучения языка.
+                            <br><br>
+                            Информация подается системно, от простого к сложному.
+                            Знания раскладываются по полочкам.
+                            <br><br>
+                            <span>Вы легко и быстро изучаете язык дальше.</span> </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="also">
+            <div class="text">
+                <h4 class="second_text">А также вам доступно</h4>
+                <p class="block_header">Все, что сделает изучение турецкого по-настоящему увлекательным и ярким занятием!</p>
+                <div class="tips">
+                    <div class="tip">
+                        <img src="{% static 'works/tur_for_work/img/profile.png'%}">
+                        <div>
+                            <h5 class="block_header">Личный кабинет </h5>
+                            <p class="normal_text">Вы можете зайти в личный кабинет с компьютера, планшета, телефона и обучаться в любое время.</p>
+                        </div>
+                    </div>
+                    <div class="tip">
+                        <img class="road" src="{% static 'works/tur_for_work/img/road.png'%}">
+                        <div>
+                            <h5 class="block_header">От простого к сложному </h5>
+                            <p class="normal_text">Вы изучаете турецкий в правильной последовательности. Предыдущий освоенный навык позволяет быстрее и легче освоить следующий.</p>
+                        </div>
+                    </div>
+                    <div class="tip">
+                        <img src="{% static 'works/tur_for_work/img/tips.png'%}">
+                        <div class="mob_spec">
+                            <h5 class="block_header">Проверка знаний для оценки прогресса</h5>
+                            <p class="normal_text">После каждого урока вы выполняете тест и получаете оценку.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="join_us join_open f_join">
+                    <p class="button_text">Хочу заговорить на турецком</p>
+                    <img class="button_img" src="{% static 'works/tur_for_work/img/button_click.png'%}" alt="">
+                </a>
+
+
+        </div>
+    </div>
+
+    <div class="result">
+        <h3 class="gray_letters">Результат</h3>
+        <div class="wrap">
+            <img class="block_img" src="{% static 'works/tur_for_work/img/cub.png'%}" alt="">
+            <div class="text">
+                <p class="first_text">Result</p>
+                <h4 class="second_text">В результате обучения в формате “Заочник” вы</h4>
+                <ul class="normal_table">
+                    <li>овладеете грамматикой турецкого языка</li>
+                    <li>выучите более 2000 турецких слов</li>
+                    <li>начнете говорить по-турецки уже через несколько недель</li>
+                    <li>преодолеете языковой барьер</li>
+                    <li>научитесь свободно читать, писать и понимать турецкую речь на слух</li>
+                    <li>сэкономите деньги и время на репетитора, дорогие школы и мобильные приложения</li>
+                </ul>
+                <p class="spec_text">Благодаря нашему онлайн курсу, вы научитесь свободно и без стеснения выражать свои мысли и чувства на турецком, сможете свободно рассказать о себе и узнать многое о собеседнике, а также будете свободно общаться с носителем на разные темы.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="friends">
+        <h4 class="second_text">Если у вас в Турции есть<br> друзья или близкие люди</h4>
+        <div class="tips">
+            <div class="tip girl">
+                <p class="gray_letters">1</p>
+                <div class="tip_wrap">
+                <img src="{% static 'works/tur_for_work/img/fam.png'%}">
+                <p class="tip_text">Начнете понимать своего любимого из Турции и его семью</p>
+                </div>
+            </div>
+            <div class="tip">
+                <p class="gray_letters">2</p>
+                <div class="tip_wrap">
+                <img src="{% static 'works/tur_for_work/img/dish.png'%}">
+                <p class="tip_text">Будете увереннее чувствовать себя в Турции, совершать покупки в магазинах, посещать кафе и рестораны</p>
+                </div>
+            </div>
+            <div class="tip puzzle">
+                <p class="gray_letters">3</p>
+                <div class="tip_wrap">
+                <img src="{% static 'works/tur_for_work/img/conv.png'%}">
+                <p class="tip_text">Почувствуете себя свободно в разговорах со знакомыми и незнакомыми людьми</p>
+                </div>
+            </div>
+            <div class="tip rocket">
+                <p class="gray_letters">4</p>
+                <div class="tip_wrap">
+                <img src="{% static 'works/tur_for_work/img/hand.png'%}">
+                <p class="tip_text">Преодолеете языковый барьер, уйдет страх заговорить первым и ответить</p>
+                </div>
+            </div>
+            <div class="tip">
+                <p class="gray_letters">5</p>
+                <div class="tip_wrap">
+                <img src="{% static 'works/tur_for_work/img/learn.png'%}">
+                <p class="tip_text">Сэкономите на обучении в предверии переезда в Турцию</p>
+                </div>
+            </div>
+            <div class="tip">
+                <p class="gray_letters">6</p>
+                <div class="tip_wrap">
+                <img src="{% static 'works/tur_for_work/img/g.png'%}">
+                <p class="tip_text">Избежите непонимания в общении с любимыми и сделаете отношения более глубокими</p>
+                </div>
+            </div>
+        </div>
+        <a class="join_us join_open f_join">
+            <p class="button_text">Да, я хочу общаться на турецком легко</p>
+            <img class="button_img" src="{% static 'works/tur_for_work/img/button_click.png'%}" alt="">
+        </a>
+    </div>
+
+    <div class="program">
+        <h3 class="gray_letters">Программа</h3>
+        <div class="wrap">
+            <div class="text">
+                <p class="first_text">Program</p>
+                <h4 class="second_text">Программа обучения</h4>
+                <p class="block_header">Построена таким образом, чтобы начали говорить уже с первого урока </p>
+                <div class="text">
+                    <p class="normal_text">
+                        Уроки разбиты на подтемы (шоппинг, рынок, знакомство, погода и т.д.), что облегчает изучение турецкого и упорядочивает ваши знания по полочкам. Информация легче запоминается и усваивается. Также легко повторять — взяли урок по нужной теме, повторили и вспомнили все, что учили.
+<br><br>
+                        В уроках используются специально подобранные, уникальные, актуальные материалы — живые диалоги, диалоги из фильмов, жизненных ситуаций, которые наговаривает преподаватель. Вы слушаете, произносите, пишете, воспроизводите.
+
+                    </p>
+                </div>
+
+            </div>
+            <img class="block_img" src="{% static 'works/tur_for_work/img/rus_puz.png'%}" alt="">
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="wrap">
+            <div class="slide s1" >
+                <p>Урок 1.<br><span>Знакомство</span></p>
+                <div class="img_cont">
+                <img src="{% static 'works/tur_for_work/img/slide_img.png'%}">
+                </div>
+                <ul>
+                    <li>Алфавит</li>
+                    <li>Закон гармонии гласных</li>
+                    <li>Множественное число</li>
+                    <li>Смягчение гласных</li>
+                    <li>Ударение в турецком языке</li>
+                    <li>Цвета</li>
+                </ul>
+            </div>
+            <div class="slide s2">
+                <p>Урок 2.<br><span>Поход на рынок</span></p>
+                <div class="img_cont">
+                <img src="{% static 'works/tur_for_work/img/slide_img.png'%}">
+                </div>
+                <ul>
+                    <li>Вопросительные и указательные местоимения</li>
+                    <li>Вопросительные частицы</li>
+                    <li>Отрицательная частица değil</li>
+                    <li>Числительные</li>
+                </ul>
+            </div>
+            <div class="slide s3">
+                <p>Урок 3.<br><span>Профессии, откуда ты?</span></p>
+                <div class="img_cont">
+                <img src="{% static 'works/tur_for_work/img/slide_img.png'%}">
+                </div>
+                <ul>
+                    <li>Личные местоимения</li>
+                    <li>Аффикс профессий</li>
+                    <li>Аффиксы личных местоимений</li>
+                </ul>
+            </div>
+            <div class="slide s4">
+                <p>Урок 4.<br><span>Что в комнате?</span></p>
+                <div class="img_cont">
+                <img src="{% static 'works/tur_for_work/img/slide_img.png'%}">
+                </div>
+                <ul>
+                    <li>Падежная схема турецкого языка</li>
+                    <li>Местный падеж</li>
+                    <li>Лексемы var и yok</li>
+                    <li>Притяжательные местоимения (аффиксы принадлежности/ притяжательности)</li>
+                </ul>
+            </div>
+            <div class="slide s5">
+                <p>Урок 5.<br><span>Погода, времена года.</span></p>
+                <div class="img_cont">
+                <img src="{% static 'works/tur_for_work/img/slide_img.png'%}">
+                </div>
+                <ul>
+                    <li>Вопросительные слова hangi и nasıl</li>
+                    <li>Времена года</li>
+                    <li>Настоящее время глагола></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="after_slider">
+        <div class="btns">
+            <div class="btn prev">
+                <img src="{% static 'works/tur_for_work/img/red_left.png'%}" alt="" class="red">
+                <img src="{% static 'works/tur_for_work/img/gray_left.png'%}" alt="" class="gray">
+            </div>
+        <div class="btn next ready">
+            <img src="{% static 'works/tur_for_work/img/red_right.png'%}" alt="" class="red">
+            <img src="{% static 'works/tur_for_work/img/gray_right.png'%}" alt="" class="gray">
+        </div>
+
+        </div>
+        <a class="join_us join_open f_join">
+            <p class="button_text">Да, хочу учить турецкий в своем темпе</p>
+            <img class="button_img" src="{% static 'works/tur_for_work/img/button_click.png'%}" alt="">
+        </a>
+    </div>
+
+    <div class="how">
+        <div class="text">
+            <h4 class="second_text">Как проходит онлайн-курс в формате “Заочник”</h4>
+            <div class="tips">
+                <div class="tip spec">
+                    <p class="num gray_letters">1</p>
+                    <div>
+                        <h5 class="block_header">Время</h5>
+                        <p class="normal_text">Вы получаете доступ к личному кабинету и смотрите уроки длительностью 1 — 1,5 часа. </p>
+                    </div>
+                </div>
+                <div class="tip">
+                    <p class="num gray_letters">2</p>
+                    <div>
+                        <h5 class="block_header">Записи</h5>
+                        <p class="normal_text">Доступны в личном кабинете пожизненно. Вы можете посмотреть их в любое время.</p>
+                    </div>
+                </div>
+                <div class="tip">
+                    <p class="num gray_letters">3</p>
+                    <div>
+                        <h5 class="block_header">Домашние <br> задания</h5>
+                        <p class="normal_text">Автоматически проверяются на учебной платформе.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="cost">
+        <h4 class="second_text">Сколько стоит</h4>
+        <div class="wrap">
+            <div class="block min">
+                <p class="hat">Minimal</p>
+                <div class="main">
+                    <ul>
+                        <li>Доступ к закрытой системе обучения (Видео уроки, аудио, упражнения, языковая практика)</li>
+                        <li>Проверка домашних заданий</li>
+                        <li>Количество уроков - 15</li>
+                        <li>Турецко-русский электронный словарь</li>
+                        <li>Турецкая виртуальная клавиатура</li>
+                        <li>Мини-курс “Повседневный турецкий”</li>
+                        <li>Видео-курс “Хитит”</li>
+                        <li>Грамматический курс “Начальный уровень А1”</li>
+                    </ul>
+                    <div class="line"></div>
+                    <p class="old">4900 руб.</p>
+                    <p class="new">2490 руб.</p>
+                </div>
+                <a class="join_us join_open f_join">
+                    <p class="button_text">Заказать</p>
+                    <img class="button_img" src="{% static 'works/tur_for_work/img/white_hand.png'%}" alt="">
+                </a>
+            </div>
+
+            <div class="block stand">
+                    <p class="hat">Standart</p>
+                <div class="main">
+                    <ul>
+                        <li>Доступ к закрытой системе обучения (Видео уроки, аудио, упражнения, языковая практика)</li>
+                        <li>Проверка домашних заданий</li>
+                        <li>Количество уроков - 15</li>
+                        <li>Турецко-русский электронный словарь</li>
+                        <li>Турецкая виртуальная клавиатура</li>
+                        <li>Мини-курс “Повседневный турецкий”</li>
+                        <li>Видео-курс “Хитит”</li>
+                        <li>Грамматический курс “Начальный уровень А1”</li>
+                    </ul>
+                    <div class="line"></div>
+                    <p class="old">7900 руб.</p>
+                    <p class="new">3900 руб.</p>
+                </div>
+                <a class="join_us join_open f_join">
+                    <p class="button_text">Заказать</p>
+                    <img class="button_img" src="{% static 'works/tur_for_work/img/button_click.png'%}" alt="">
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+</main>
+<div class="girl">
+    <img src="{% static 'works/tur_for_work/img/bottom_girl.png'%}" class="bottom_girl">
+</div>
+
+<footer>
+    <div class="main">
+        <div class="first_step">
+            <h4 class="second_text">Сделайте первый шаг</h4>
+            <p class="block_header">и начните изучать турецкий в формате “Заочник”</p>
+            <p class="normal_text">
+                1. Выберите вариант участия и зарегистрируйтесь.<br>
+                2. Получите доступ в закрытый личный кабинет (там выложены уроки по турецкому).<br>
+                3. Выполняйте задания после каждого урока.<br>
+                4. Получайте автоматическую проверку ДЗ.<br>
+                5. Начните говорить, писать, читать и понимать турецкий на слух, изучая язык в своем темпе.</p>
+            <p class="spec_text">Выбирайте свой пакет участия и начните общаться на турецком легко и с удовольствием</p>
+            <a class="join_us join_open f_join">
+                <p class="button_text">Участовать</p>
+                <img class="button_img" src="{% static 'works/tur_for_work/img/button_click.png'%}" alt="">
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

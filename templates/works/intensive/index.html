@@ -1,0 +1,282 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Всстреча</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'works/intensive/style.css'%}">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+</head>
+
+<body>
+<header>
+    <div class="head_wrap">
+        <div>
+            {% static 'works/intensive/img/logo.svg'%}" alt="" class="logo">
+            <h3>Старт курса <span><br>22 апреля</span></h3>
+        </div>
+
+        <a class="join_us join_open">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+    </div>
+
+</header>
+<div style="display: none" class="send_form">
+
+    <div>
+        {% static 'works/intensive/img/end.svg'%}" id="close">
+        <div class="before_send">
+            <h4>ЗАЯВКА</h4>
+            <p>Отправьте заявка, и в ближайшее время<br>
+                мы с Вами свяжемся!</p>
+            <form>
+                <input type="text" required name="name" class="Name_in" placeholder="Ваше Имя">
+                <input type="email" required name="email" class="Email_in" placeholder="Ваш email">
+                <input type="text" required name="phone" class="Phone_in" placeholder="Ваш телефон">
+                <input value="" style="display:none;" class="submit" type="submit">
+                <div class="send join_us"><p>отправить заявку</p></div>
+            </form>
+        </div>
+        <div style="display: none" class="after_send">
+            {% static 'works/intensive/img/thanks.svg'%}">
+            <p>Спасибо за<br> заявку</p>
+        </div>
+    </div>
+</div>
+<div class="body_wrap">
+
+    <div class="first_block">
+        {% static 'works/intensive/img/first_flag.png'%}">
+        <div class="how">
+            <h1>Интенсивный курс разговорного
+                турецкого языка</h1>
+            <h3>Освойте самую важную лексику и грамматику для<br> общения всего за 2 месяца</h3>
+
+            <h4>Старт 22 апреля</h4>
+            <div class="join_us join_open">Присоединиться</div>
+            <h5>Записывайтесь в группу и получите подарок:<br>
+                доступ к онлайн курсу для начинающих А1
+            </h5>
+
+        </div>
+    </div>
+    <div class="do_you_need">
+        <div></div>
+        <div class="wrap">
+            {% static 'works/intensive/img/do_you_need.png'%}" alt="">
+            <div class="text">
+                <h2>Вам нужен турецкий язык?</h2>
+                <p>Возможно, этого требует работа.<br>
+                    Или вы хотите свободно общаться в путешествиях, с любимым человеком, друзьями.<b><br></b>
+                    А может, вы хотите смотреть фильмы и сериалы в оригинале, слушать, понимать песни (и подпевать), читать турецкую литературу…
+                </p>
+                <span>Причина не важна, если есть мотив.</span>
+            </div>
+        </div>
+    </div>
+    <div class="but">
+        <h2>Но для изучения языка вам<br> постоянно не хватает:</h2>
+        <div class="tips">
+            <div class="tip">
+                <h4>Времени</h4>
+                <p>«Я очень занят, работа отнимает почти все время, а на изучения языка надо не один год»</p>
+            </div>
+            <div class="tip">
+                <h4>Самоогранизации</h4>
+                <p>«Я не могу себя заставить, пытался несколько раз начать, но никак не получалось»</p>
+            </div>
+            <div class="tip">
+                <h4>Уверенности в успехе</h4>
+                <p>«Я сомневаюсь, что у меня получится, нет склонности к языкам, наверное, это не мое..»</p>
+            </div>
+        </div>
+        <div class="join_us join_open">зарегистрироваться</div>
+    </div>
+    <div class="familiar">
+        <div></div>
+        <div class="wrap">
+            <h3>Вам тоже это<br> знакомо?</h3>
+            <p>научиться понимать и общаться</p>
+            <div class="main">
+                <div>16<br><span>ЗАНЯТИЙ</span></div>
+                <div>
+                    <p>Тогда предлагаем вам всего за 16 занятий научиться понимать и общаться простыми фразами на турецком языке в «Интенсивном курсе разговорного турецкого языка»
+                        <br><br>
+
+                        <span>Курс включает все основные лексические и грамматические темы начального уровня, которыми вы овладеете всего за два месяца.</span> </p>
+                    <div class="join_us join_open">Присоединиться</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="blue_line">
+        <p>В программе курса:</p>
+    </div>
+    <div class="program">
+        <div class="wrap">
+        <div class="tip">
+            <p>Лексика</p>
+            <p>Знакомсва</p>
+            <p>Семья</p>
+            <p>Дома</p>
+            <p>В городе</p>
+            <p>Профессии</p>
+            <p>Работа</p>
+            <p>Хобби</p>
+            <p>Здровье и многие другие</p>
+
+        </div>
+        <div class="tip">
+            <p>Грамматика</p>
+            <p>Алфавит и законы гармонии</p>
+            <p>Местоимения</p>
+            <p>Все основные времена глаголов</p>
+            <p>Порядок слов в предложении</p>
+            <p>Формы отрицания</p>
+            <p>Предлоги</p>
+            <p>Основные наклонения глаголов</p>
+            <p>Все падежи</p>
+        </div>
+    </div>
+    </div>
+    <p class="emphasis">На занятиях делается упор <span>на разговорную речь</span>  –  то, что больше<br> всего необходимо в повседневной жизни. </p>
+    <div class="in_group">
+        <div></div>
+        <div class="wrap">
+
+            <div class="text">
+                <h2>Обучение в группе</h2>
+                <p>Обогащению словарного запаса и развитию вербальной коммуникации</p>
+                <p>Отработке правильного произношения и употребления речевых оборотов</p>
+                <p>Анализу своих и чужих ошибок</p>
+                <p>Взаимодействию с другими студентами</p>
+                <p>Подъему мотивации</p>
+            </div>
+            {% static 'works/intensive/img/in_group.png'%}" alt="">
+        </div>
+    </div>
+        <div class="things">
+            <div class="thing">
+                {% static 'works/intensive/img/award.svg'%}" class="award" width="48px">
+                <h4>Качество обучения</h4>
+                <p>Центр обучения турецкому языку<br>
+                    «Диалог» успешно работает с 2005 года.<b><br></b> Это<br>
+                    единственно официальное представительство TOMER (Центр изучения и практики турецкого языка при Анкарском государственном университете).</p>
+            </div>
+            <div class="thing">
+                {% static 'works/intensive/img/raiting.svg'%}">
+                <h4>Высокая эффективность</h4>
+                <p>В группе всего 10 человек, что позволит реализовать индивидуальный подход, создать уютный микроклимат, больше времени и  меньше нагрузки на каждого студента</p>
+            </div>
+            <div class="thing int" >
+                {% static 'works/intensive/img/promo.svg'%}" >
+                <h4>Интенсивность</h4>
+                <p>
+                    Программа разработана с учетом вашей занятости и позволит в кратчайшие сроки освоить максимум материала</p>
+            </div>
+            <div class="thing star">
+                {% static 'works/intensive/img/star.svg'%}">
+                <h4>Бонус</h4>
+                <p>
+
+                    Курс для начинающих, уровень А1 построен по программе, разработанной на основе Томер, что позволяет качественно подготовиться к международному экзамену. Подробнее о нем здесь:
+                    <a href="https://www.tomer.ru/a1/">https://www.tomer.ru/a1/</a></p>
+            </div>
+            <div class="thing">
+                {% static 'works/intensive/img/cert.svg'%}">
+                <h4>Сертификат</h4>
+                <p>По окончанию обучения вы<br>
+                    получите документ об успешном прохождении курса</p>
+            </div>
+        </div>
+    <div class="leading">
+        <div></div>
+        <div class="wrap">
+            {% static 'works/intensive/img/man.png'%}" alt="">
+            <div class="text">
+                <h2>Ведущий курса  – <br> <span>Айдемир Озберк</span></h2>
+                <p><span>Носитель языка</span></p>
+                <p>Здравствуйте, меня зовут Айдемир. Я турок, приехал из Стамбула, где учился и работал. В России живу более 12 лет. В Москве окончил РУДН. Работаю преподавателем более 8 лет, веду групповые и индивидуальные занятия. Моя работа позволяет мне каждый день помогать моим студентам осваивать основы турецкого языка и совершенствовать уже пройденный материал. Я очень рад, что многие из моих учеников в дальнейшем применяют свои знания на практике, как в работе так и для личного общения. Жду Вас на своих занятиях!</p>
+            </div>
+        </div>
+    </div>
+    <h2 class="how_text">КАК ПРОХОДИТ ОБУЧЕНИЕ</h2>
+    <div class="how_it_goes">
+
+        <div class="wrap">
+            <div class="step">
+                <p>1</p>
+                <p>Формат</p>
+                <p>Очные групповые занятия в классе</p>
+            </div>
+            <div class="step">
+                <p>2</p>
+                <p>Интенсивность</p>
+                <p>2 раза в неделю</p>
+            </div>
+            <div class="step">
+                <p>3</p>
+                <p>Время</p>
+                <p>по будням с 19:00 до 20:30</p>
+            </div>
+
+
+            <div class="step">
+                <p>4</p>
+                <p>Количество занятий</p>
+                <p>16 уроков</p>
+            </div>
+        </div>
+    </div>
+    <div class="cost">
+        <h2>СТОИМОСТЬ ОБУЧЕНИЯ<span>  –  14 400 р</span></h2>
+        <p>учебный комплект входит в стоимость</p>
+        <div class="join_us join_open">зарегистрироваться</div>
+    </div>
+    <div class="after_learn">
+        <div></div>
+        <div class="wrap">
+            {% static 'works/intensive/img/after_img.png'%}" alt="">
+            <div class="text">
+                <h2>После обучения вы сможете:</h2>
+                <p>Простыми предложениями рассказать о себе, о своей семье, о своих друзьях, о работе</p>
+                <p>Описать, что вы любите и не любите делать</p>
+                <p>Спрашивать и отвечать который час</p>
+                <p>Использовать цифры от 1 до 1 000</p>
+                <p>Поддержать беседу на бытовые темы (ресторан, магазин, улица)</p>
+                <p>Задать простые вопросы собеседнику или ответить самому на темы, связанные с аспектами бытовой жизни: об отдыхе, о еде и напитках, о ежедневных делах</p>
+                <p>Написать простые предложения с приветствиями и поздравлениями друзьям и близким.</p>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div></div>
+        <div>
+            <h2>РЕГИСТРАЦИЯ ЗАКАНЧИВАЕТСЯ 21 АПРЕЛЯ,
+                НО ПРИ НАБОРЕ 10 ЧЕЛОВЕК ПРИЕМ В ГРУППУ БУДЕТ ЗАКРЫТ!
+            </h2>
+        </div>
+    </div>
+    <div class="go_ahead">
+        <h3>Спешите занять своё место в обучении</h3>
+        <form>
+            <input type="text" required name="name" class="Name_in" placeholder="Ваше Имя">
+            <input type="email" required name="email" class="Email_in" placeholder="Ваш email">
+            <input type="text" required name="phone" class="Phone_in" placeholder="Ваш телефон">
+            <input value="" style="display:none;" class="submit" type="submit">
+            <div class="send join_us">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+        </form>
+    </div>
+    </div>
+
+
+
+
+<script id="jquery" language="JavaScript" src="{% static 'works/intensive/scripts/jquery.js'%}"></script>
+<script language="JavaScript" src="{% static 'works/intensive/scripts/script.js'%}"></script>
+</body>
+</html>
