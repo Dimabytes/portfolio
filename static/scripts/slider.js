@@ -1,6 +1,6 @@
 let navBtnId = 0;
 let SlideNow = 1;
-let SlideCount = $('#slidewrapper').children.length;
+let SlideCount = 4;
 let translateWidth = 0;
 let slideInterval = 5000;
 let nav_now = $('#nav-btns li:nth-child(1)');
@@ -9,7 +9,7 @@ function nextSlide() {
         $('#slidewrapper').css('transform', 'translate(0, 0)');
         SlideNow = 1
     } else {
-        console.log('2');
+
         translateWidth = -$('#viewport').width() * (SlideNow);
         $('#slidewrapper').css({
             'transform': 'translate(' + translateWidth + 'px, 0)',
