@@ -10,4 +10,6 @@ urlpatterns = [
     path("talk_club/", works.views.talk, name="talk_club"),
     path("intensive/", works.views.intensive, name="intensive"),
     path("tur_for_work/", works.views.tur_for_work, name="tur_for_work"),
+    path("skype/", works.views.skype, name="skype"),
+    path("t_main/", works.views.t_main, name="t_main"),
 ]

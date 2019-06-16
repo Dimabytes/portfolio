@@ -34,3 +34,13 @@ def intensive(request):
 def tur_for_work(request):
 
     return render(request, 'templates/works/tur_for_work/index.html')
+
+
+def skype(request):
+
+    return render(request, 'templates/works/skype/index.html')
+
+
+def t_main(request):
+
+    return render(request, 'templates/works/t_main/index.html')

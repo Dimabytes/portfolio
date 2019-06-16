@@ -1,0 +1,611 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=" width=device-width,initial-scale=1">
+	<title>Главная</title>
+	<link rel="stylesheet"  href="{% static 'works/skype/css/normalize.min.css'%}">
+
+
+    <link rel="stylesheet"  href="{% static 'works/skype/css/style.css'%}">
+</head>
+
+<!-- .body-mask при модальном -->
+<body class="body-mask">
+
+	<!-- боковая навигация -->
+	<nav class="nav-side item-mask">
+
+		<div class="nav-side__content">
+
+			<!-- закрыть на моб -->
+			<div class="nav-side__close"></div>
+
+			<ul>
+				<li>
+					<a href="#">
+						<span>О центре</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span>Онлайн обучение</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span href="#">Курсы</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span>Отзывы</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span>База знаний</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span>Контакты</span>
+					</a>
+				</li>
+			</ul>
+
+			<!-- телефон в мобильной версии -->
+			<div class="side-tel-mob">
+				<img src="{% static 'works/skype/img/ico/tel-red.png'%}" alt="">
+				<a href="tel:+74952553020">+7 (495) 255-30-20</a>
+			</div>
+            <div class="side-text-mob">
+                <p>Мы работаем ежедневно<br>
+                    с 9:00 до 21:00</p>
+            </div>
+		</div>
+	</nav>
+
+	<!-- шапка -->
+	<header class="header__wrap  item-mask">
+
+		<div class="header  container">
+			<div class="header__left">
+
+				<a href="#"><img src="{% static 'works/skype/img/logo.png'%}" alt="Диалог"></a>
+
+				<div class="header__left-text">
+					<p>Мы работаем ежедневно с 9:00 до 21:00</p>
+				</div>
+
+			</div>
+
+			<div class="header__right">
+                <div>
+
+				<a class="header__right-tel" href="tel:+74952553020">+7 (495) 255-30-20</a>
+
+				<a class="btn  btn--header  js-modal-show" href="#form-request">
+					<span>Заказать звонок</span>
+					<img src="{% static 'works/skype/img/ico/call.svg'%}" alt="">
+				</a>
+                </div>
+                <div class="desk_menu">
+                    <a href="#">О центре</a>
+                    <a href="#">Онлайн обучение</a>
+                    <a href="#">Курсы</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">База знаний</a>
+                    <a href="#">Контакты</a>
+                </div>
+
+				<div class="header__burger"></div>
+			</div>
+
+		</div>
+
+	</header>
+
+
+
+
+
+
+
+
+
+
+
+<section class="first_block section_wrap">
+    <main>
+        <div class="text">
+        <h1>Курс турецкого языка по Skype</h1>
+        <p>Занятия с репетитором онлайн в языковой школе «Диалог»</p>
+        <a class="btn js-modal-show" href="#form-request">
+            <span>Записаться на пробный урок</span>
+        </a>
+        </div>
+    </main>
+
+</section>
+    <div class="you_will section_wrap">
+        <div class="section_body">
+            <div class="start_header">
+                <p>Вы будете учить турецкий язык с лучшим преподавателем</p>
+                <p>Преподаватели</p>
+            </div>
+            <h3>Трехэтапный отбор</h3>
+            <div class="tips">
+                <div class="tip">
+                    <p>1</p>
+                    <img id="conv" src="{% static 'works/skype/img/conversation.png'%}">
+                    <p><span>Проверка уровня преподавателя</span><br><br>
+                        Методисты школы строго проверяют уровень турецкого языка преподавателей, педагогические навыки и способность разговорить собеседника.</p>
+                </div>
+                <div class="tip">
+                    <p>2</p>
+                    <img src="{% static 'works/skype/img/hiring.png'%}">
+                    <p><span>Подбор преподавателя под вас</span><br><br>
+                        На вводном занятии по Skype методист подберет вам преподавателя со схожими интересами и темперантом, а также учтет личные пожелания.</p>
+                </div>
+                <div class="tip">
+                    <p>3</p>
+                    <img src="{% static 'works/skype/img/research.png'%}">
+                    <p><span>Методический контроль</span><br><br>
+                        С каждым преподавателем работает ответственный методист, который проверяет качество уроков и помогает учить лучше.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="slider_wrap section_wrap slider_1">
+        <div class="slider section_body">
+            <div class="main_slider_wrap">
+                <div class="main_slider sl_1">
+                    <div class="slide">
+                        <div class="tip">
+                            <img src="{% static 'works/skype/img/teach_1.jpg'%}" alt="">
+                            <div class="text">
+                                <p>Патрина Екатерина1</p>
+                                <!-- hidden br нужен для мобильного устройства -->
+                                <p>Репетитор онлайн школы турецкого языка.<br><br class="hidden_br">
+                                    Опыт преподавания 5 лет</p>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <img src="{% static 'works/skype/img/teach_2.jpg'%}" alt="">
+                            <div class="text">
+                                <p>Маркова Елена</p>
+                                <p>Репетитор онлайн школы турецкого языка.<br><br class="hidden_br">
+                                    Опыт преподавания 7 лет</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="display:none;">
+                        <div class="tip">
+                            <img src="{% static 'works/skype/img/teach_1.jpg'%}" alt="">
+                            <div class="text">
+                                <p>Патрина Екатерина2</p>
+                                <p>Репетитор онлайн школы турецкого языка.<br><br class="hidden_br">
+                                    Опыт преподавания 5 лет</p>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <img src="{% static 'works/skype/img/teach_2.jpg'%}" alt="">
+                            <div class="text">
+                                <p>Маркова Елена</p>
+                                <p>Репетитор онлайн школы турецкого языка.<br><br class="hidden_br">
+                                    Опыт преподавания 7 лет</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="display:none;">
+                        <div class="tip">
+                            <img src="{% static 'works/skype/img/teach_1.jpg'%}" alt="">
+                            <div class="text">
+                                <p>Патрина Екатерина3</p>
+                                <p>Репетитор онлайн школы турецкого языка.<br><br class="hidden_br">
+                                    Опыт преподавания 5 лет</p>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <img src="{% static 'works/skype/img/teach_2.jpg'%}" alt="">
+                            <div class="text">
+                                <p>Маркова Елена</p>
+                                <p>Репетитор онлайн школы турецкого языка.<br><br class="hidden_br">
+                                    Опыт преподавания 7 лет</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="display:none;">
+                        <div class="tip">
+                            <img src="{% static 'works/skype/img/teach_1.jpg'%}" alt="">
+                            <div class="text">
+                                <p>Патрина Екатерина4</p>
+                                <p>Репетитор онлайн школы турецкого языка.<br><br class="hidden_br">
+                                    Опыт преподавания 5 лет</p>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <img src="{% static 'works/skype/img/teach_2.jpg'%}" alt="">
+                            <div class="text">
+                                <p>Маркова Елена</p>
+                                <p>Репетитор онлайн школы турецкого языка.<br><br class="hidden_br">
+                                    Опыт преподавания 7 лет</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="display:none;">
+                        <div class="tip">
+                            <img src="{% static 'works/skype/img/teach_1.jpg'%}" alt="">
+                            <div class="text">
+                                <p>Патрина Екатерина5</p>
+                                <p>Репетитор онлайн школы турецкого языка.<br><br class="hidden_br">
+                                    Опыт преподавания 5 лет</p>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <img src="{% static 'works/skype/img/teach_2.jpg'%}" alt="">
+                            <div class="text">
+                                <p>Маркова Елена</p>
+                                <p>Репетитор онлайн школы турецкого языка.<br><br class="hidden_br">
+                                    Опыт преподавания 7 лет</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+                <div class="nav_slide sl_1_nav">
+                    <div class="circle active_nav"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+    </section>
+
+    <section class="license_wrap section_wrap">
+        <div class="license section_body">
+            <div class="start_header">
+                <p>Сертификат по окончанию курса</p>
+                <p>Сертификат</p>
+            </div>
+            <img src="{% static 'works/skype/img/lic.jpg'%}">
+            <div class="text">
+                <p>По окончанию курса вы получите электронный сертификат</p>
+                <p>В других курсах вы не можете подтвердить владение языком, например, для работы в турецкой компании.<br>
+                    У нас вы получаете сертификат, который свидетельствует о том, что вы прошли базовую программу.<br><br>
+
+                    <span>А это дополнительный плюс при трудоустройстве.</span></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="skype_send send_first section_wrap">
+        <div class="section_body">
+            <h4>Запишитесь на бесплатный пробный урок!</h4>
+            <form>
+                <input type="text" required name="name" class="Name_in" placeholder="ВАШЕ ИМЯ">
+                <input type="text" required name="phone/skype" class="Phone_in" placeholder="ВАШ SKYPE/ТЕЛЕФОН (ДЛЯ РФ)">
+                <input value="" style="display:none;" class="submit" type="submit">
+                <a class="btn">
+                    <span>Отправить заявку </span>
+                    <img src="{% static 'works/skype/img/click.svg'%}" alt="">
+                </a>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <section class="lessons_count section_wrap">
+        <div class="section_body">
+
+            <div class="start_header">
+                <p>Выберите количество оплачиваемых занятий</p>
+                <p>Стоимость</p>
+            </div>
+            <main>
+                <div class="slide_wrap">
+                    <p>Выберите количество оплачиваемых занятий:</p>
+                    <div id="lessons_count"></div>
+                    <div class="count">
+                        <p class="active_count count_1">1</p>
+                        <p class="count_2">8</p>
+                        <p class="count_3">16</p>
+                        <p class="count_4">24</p>
+                        <p class="count_5">32</p>
+                    </div>
+                </div>
+                <div class="full_price">
+                    <div class="price price_1" style="display: block">
+                        <p>Общая стоимость занятий: <br> <span>1500<b> руб</b></span></p>
+                        <p>Стоимость одного занятия: <br>  <span>1500<b> руб</b></span></p>
+                    </div>
+                    <div class="price price_2" style="display: none">
+                        <p>Общая стоимость занятий:  <br> <span>2500<b> руб</b></span></p>
+                        <p>Стоимость одного занятия:<br><span>2500<b> руб</b></span></p>
+                    </div>
+                    <div class="price price_3" style="display: none">
+                        <p>Общая стоимость занятий:<br> <span>3500<b> руб</b></span></p>
+                        <p>Стоимость одного занятия:<br> <span>3500<b> руб</b></span></p>
+                    </div>
+                    <div class="price price_4" style="display: none">
+                        <p>Общая стоимость занятий: <br><span>4500<b> руб</b></span></p>
+                        <p>Стоимость одного занятия:<br> <span>4500<b> руб</b></span></p>
+                    </div>
+                    <div class="price price_5" style="display: none">
+                        <p>Общая стоимость занятий:<br> <span>6500<b> руб</b></span></p>
+                        <p>Стоимость одного занятия:<br> <span>6500<b> руб</b></span></p>
+                    </div>
+                </div>
+            </main>
+
+
+        </div>
+
+    </section>
+
+    <section class="how section_wrap">
+        <div class="section_body">
+            <div class="start_header">
+                <p>Как проходят занятия:</p>
+                <p>занятия</p>
+            </div>
+            <main>
+                <div class="nav_wrap">
+                    <nav>
+                        <p class="active_nav">Интерактивные уроки</p>
+                        <p>Домашние задания</p>
+                        <p>Хранение материалов</p>
+                        <p>Личный кабинет</p>
+                    </nav>
+                </div>
+                <div class="slider">
+                    <img style="display: block" src="{% static 'works/skype/img/sl_ph_1.jpg'%}">
+                    <img style="display: none" src="{% static 'works/skype/img/0.9502302365363431.jpg'%}">
+                    <img style="display: none" src="{% static 'works/skype/img/0.9881807010107311.jpg'%}">
+                    <img style="display: none" src="{% static 'works/skype/img/0.9973840369206012.jpg'%}">
+                </div>
+            </main>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="teachers_wrap section_wrap slider_2">
+        <div class="teachers section_body">
+            <div class="start_header">
+                <p>Наши ученики достигают поставленых целей</p>
+                <p>Отзывы</p>
+            </div>
+            <div class="main_slider_wrap">
+                <div class="main_slider sl_2">
+                    <div class="slide" style="display: flex">
+                        <div class="tip">
+                            <img src="{% static 'works/skype/img/cor.jpg'%}">
+                            <div class="tip_2_content">
+                                <p>Вячеслав Королев</p>
+                                <p>ЭТО ОЧЕНЬ КРУТО, КОГДА ТЫ МОЖЕШЬ ОБУЧАТЬСЯ, НЕ ВЫХОДЯ ИЗ ДОМА ИЛИ НАХОДЯСЬ В ЛЮБОМ УГОЛКЕ МИРА!</p>
+                                <p>Ранее к online обучению я относился скептически. Но благодаря языковым курсам «Диалог» мои сомнения полностью рассеялись. Считаю, что при наличии хорошего интернета это очень продуктивно и главное – удобно. Хочу сказать большое спасибо моему преподавателю - Ифлазоглу Наталье. Сейчас нахожусь в Турции и стараюсь говорить только по-турецки. Моя оценка – 10.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="display: none">
+                        <div class="tip">
+                            <img src="{% static 'works/skype/img/cor.jpg'%}">
+                            <div class="tip_2_content">
+                                <p>Вячеслав Королев</p>
+                                <p>ЭТО ОЧЕНЬ КРУТО, КОГДА ТЫ МОЖЕШЬ ОБУЧАТЬСЯ, НЕ ВЫХОДЯ ИЗ ДОМА ИЛИ НАХОДЯСЬ В ЛЮБОМ УГОЛКЕ МИРА!</p>
+                                <p>Ранее к online обучению я относился скептически. Но благодаря языковым курсам «Диалог» мои сомнения полностью рассеялись. Считаю, что при наличии хорошего интернета это очень продуктивно и главное – удобно. Хочу сказать большое спасибо моему преподавателю - Ифлазоглу Наталье. Сейчас нахожусь в Турции и стараюсь говорить только по-турецки. Моя оценка – 10.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="display: none">
+                        <div class="tip">
+                            <img src="{% static 'works/skype/img/cor.jpg'%}">
+                            <div class="tip_2_content">
+                                <p>Вячеслав Королев</p>
+                                <p>ЭТО ОЧЕНЬ КРУТО, КОГДА ТЫ МОЖЕШЬ ОБУЧАТЬСЯ, НЕ ВЫХОДЯ ИЗ ДОМА ИЛИ НАХОДЯСЬ В ЛЮБОМ УГОЛКЕ МИРА!</p>
+                                <p>Ранее к online обучению я относился скептически. Но благодаря языковым курсам «Диалог» мои сомнения полностью рассеялись. Считаю, что при наличии хорошего интернета это очень продуктивно и главное – удобно. Хочу сказать большое спасибо моему преподавателю - Ифлазоглу Наталье. Сейчас нахожусь в Турции и стараюсь говорить только по-турецки. Моя оценка – 10.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_slide sl_2_nav">
+                <div class="circle active_nav"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+
+    </section>
+    <section class="accordion section_wrap slider_2">
+        <div class="accordion section_body">
+            <div class="start_header">
+                <p>Топ-5 вопросов перед началом обучения</p>
+                <p>вопросы</p>
+            </div>
+            <main>
+                <img src="{% static 'works/skype/img/q.jpg'%}">
+    <div id="accordion">
+        <h3>1. Я могу уехать в отпуск/в командировку/заболеть и пропустить занятия...</h3>
+        <div>
+            <p>
+                Все наши слушатели являются активными людьми и периодически вынуждены пропускать занятия. На этот случай у нас предусмотрены “Добрые часы”, на которых преподаватель индивидуально с Вами отрабатывает пропущенные темы…
+            </p>
+        </div>
+        <h3>2. Я не могу себе позволить сразу оплатить весь курс</h3>
+        <div>
+            <p>
+                Все наши слушатели являются активными людьми и периодически вынуждены пропускать занятия. На этот случай у нас предусмотрены “Добрые часы”, на которых преподаватель индивидуально с Вами отрабатывает пропущенные темы…
+            </p>
+        </div>
+        <h3>3. Мне вообще не дано научиться разговаривать на иностранном языке.</h3>
+        <div>
+            <p>
+                Все наши слушатели являются активными людьми и периодически вынуждены пропускать занятия. На этот случай у нас предусмотрены “Добрые часы”, на которых преподаватель индивидуально с Вами отрабатывает пропущенные темы…
+            </p>
+        </div>
+        <h3>4. Мне кажется, что турецкий язык очень сложный.</h3>
+        <div>
+            <p>
+                Все наши слушатели являются активными людьми и периодически вынуждены пропускать занятия. На этот случай у нас предусмотрены “Добрые часы”, на которых преподаватель индивидуально с Вами отрабатывает пропущенные темы…
+            </p>
+        </div>
+        <h3>5. А вдруг я все таки не научусь разговаривать по-турецки?</h3>
+        <div>
+            <p>
+                Все наши слушатели являются активными людьми и периодически вынуждены пропускать занятия. На этот случай у нас предусмотрены “Добрые часы”, на которых преподаватель индивидуально с Вами отрабатывает пропущенные темы…
+            </p>
+        </div>
+    </div>
+            </main>
+        </div>
+    </section>
+
+
+    <section class="skype_send send_second section_wrap">
+        <div class="section_body">
+            <h4>Остались вопросы?<br>
+
+                <span>Оставьте заявку, и мы <br> свяжемся с вами!</span></h4>
+            <form>
+                <input type="text" required name="name" class="Name_in" placeholder="ВАШЕ ИМЯ">
+                <input type="text" required name="phone/skype" class="Phone_in" placeholder="ВАШ SKYPE/ТЕЛЕФОН (ДЛЯ РФ)">
+                <input value="" style="display:none;" class="submit" type="submit">
+                <a class="btn">
+                    <span>Отправить заявку </span>
+                    <img src="{% static 'works/skype/img/click.svg'%}" alt="">
+                </a>
+            </form>
+        </div>
+    </section>
+	<footer class="footer__wrap">
+
+		<div class="footer  container">
+
+			<div class="footer__contacts">
+				<a class="footer__logo" href="#">
+					<img src="{% static 'works/skype/img/ico/logo.png'%}" alt="">
+				</a>
+
+				<div class="footer__contacts-info">
+					<p>г. Москва, пл. Тверская застава д. 3, 4 этаж, оф. 410<br>Телефон: +7 (495) 255-30-20</p>
+					<p>Мы работаем ежедневно с 9:00 до 21:00</p>
+					<p>Копирование информации с сайта и ее размещение возможно только с ссылкой на данный ресурс.</p>
+					<p>Языковые курсы «Диалог» © 2005 - 2019</p>
+				</div>
+			</div>
+
+
+
+			<div class="footer__right">
+
+				<div class="footer__nav">
+					<ul>
+						<li><a href="#">Центр Диалог</a></li>
+						<li><a href="#">Расписание</a></li>
+						<li><a href="#">Способы оплаты</a></li>
+						<li><a href="#">Узнай свой уровень</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Карта сайта</a></li>
+					</ul>
+
+					<ul>
+						<li><a href="#">Корпоративное обучение</a></li>
+						<li><a href="#">Онлайн-обучение</a></li>
+						<li><a href="#">Обучение в Турции</a></li>
+						<li><a href="#">Индивидуальные занятия</a></li>
+						<li><a href="#">Обучение в группе</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__social">
+					<b>Мы в соцсетях:</b>
+
+					<ul class="footer__social-list">
+						<li><a href="#"><img src="{% static 'works/skype/img/ico/vk.png'%}" alt="vk"></a></li>
+						<li><a href="#"><img src="{% static 'works/skype/img/ico/facebook.png'%}" alt="facebook"></a></li>
+						<li><a href="#"><img src="{% static 'works/skype/img/ico/instagram.png'%}" alt="instagram"></a></li>
+						<li><a href="#"><img src="{% static 'works/skype/img/ico/odnoklassniki.png'%}" alt="odnoklassniki"></a></li>
+					</ul>
+
+					<div class="footer__agreement">
+						<a href="#">Информация о платежах</a>
+						<a href="#">Соглашение об обработке персональных данных</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</footer>
+
+
+	<div class="modal-form  js-modal-wrap" id="form-request">
+
+		<div class="modal-form__close  js-modal-close"></div>
+
+		<h3>Заявка</h3>
+		<p>Отправьте заявка, и в ближайшее время мы с Вами свяжемся!</p>
+
+		<form  id="#modal-form" action="#">
+			<div class="modal-form__field  modal-form__field--name">
+				<input type="text" required="" placeholder="Ваше имя">
+			</div>
+
+			<div class="modal-form__field  modal-form__field--mail">
+				<input type="email" required="" placeholder="E-Mail">
+			</div>
+
+			<div class="modal-form__field  modal-form__field--tel">
+				<input type="tel" required="" placeholder="Ваш телефон">
+			</div>
+
+			<button class="btn" id="modal-submit">отправить заявку <img src="{% static 'works/skype/img/ico/click.svg'%}" alt=""></button>
+		</form>
+
+		<div class="modal-form-done">
+			<img src="{% static 'works/skype/img/ico/mail-done.png'%}" alt="">
+			<strong>Спасибо за заявку!</strong>
+		</div>
+	</div>
+
+	<script src="{% static 'works/skype/js/jquery-3.1.1.js'%}"></script>
+	<script src="{% static 'works/skype/js/ofi.min.js'%}"></script>
+	<script src="{% static 'works/skype/js/main.js'%}"></script>
+    <script src="{% static 'works/skype/js/JQ_UI.js'%}"></script>
+    <link rel="stylesheet" href="{% static 'works/skype/css/JQ_UI.css'%}">
+
+</body>
+
+</html>
