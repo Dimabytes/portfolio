@@ -1,0 +1,540 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Template</title>
+     <link rel="stylesheet" type="text/css" href="{% static 'works/filter_form/style/JQ_UI.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'works/filter_form/style.css'%}">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+</head>
+
+<body>
+<header>
+    <div class="logo_text">
+        <img class="logo" src="{% static 'works/filter_form/img/logo.png'%}">
+        <div class="search">
+
+            <input type="text" placeholder="Ялта">
+            <img class="src" src="{% static 'works/filter_form/img/src.svg'%}">
+
+        </div>
+        <p class="picks">Ялта</p>
+        <p class="picks">21 - 30 мая</p>
+        <p class="picks">2 взрослых</p>
+        <p class="picks child">1 ребёнок</p>
+        <p class="other">другие фильтры</p>
+    </div>
+    <div class="options">
+        <a href="#">Предложить свое жилье</a>
+        <a href="#">Выйти</a>
+    </div>
+</header>
+<section class="main_filter">
+    <div class="filter_body">
+        <div class="house_type circle_check">
+            <h2 class="upper_text">Тип жилья</h2>
+            <fieldset>
+                <div>
+                    <div>
+                        <p>Жильё целиком</p>
+                        <input type="checkbox" id="Full_house" />
+                        <label for="Full_house"></label>
+                    </div>
+                    <span>В вашем распоряжении жилье целиком</span>
+                </div>
+                <div>
+                    <div>
+                        <p>Отдельная комната</p>
+                        <input type="checkbox" id="Only_room" />
+                        <label for="Only_room"></label>
+                    </div>
+                    <span>В вашем распоряжении комната, а остальные <br> уголки жилья вы разделите с другими</span>
+                </div>
+                <div>
+                    <div>
+                        <p>Гостиничный номер</p>
+                        <input type="checkbox" id="Hotel" />
+                        <label for="Hotel"></label>
+                    </div>
+                    <span>Забронируйте отдельный или общий номер<br>
+в бутик-отеле, хостеле и не только</span>
+                </div>
+                <div>
+                    <div>
+                        <p>Место в комнате</p>
+                        <input type="checkbox" id="Place_in_room" />
+                        <label for="Place_in_room"></label>
+                    </div>
+                    <span>Вы будете не одни — например<br>
+в комнате с соседями</span>
+                </div>
+            </fieldset>
+        </div>
+        <div class="second_filter">
+            <div class="slider">
+                <p class="range">
+                    <label for="amount">Диапазон цен:</label>
+                    <input type="text" id="amount" readonly>
+                </p>
+                <div class="slider-body">
+                    <img src="{% static 'works/filter_form/img/min.svg'%}" class="minus_s">
+                    <div id="slider-range"></div>
+                    <img src="{% static 'works/filter_form/img/plus.svg'%}" class="plus_s">
+                </div>
+
+
+            </div>
+            <div class="trip_type circle_check">
+                <h2 class="upper_text">Тип поездки</h2>
+                <fieldset>
+                    <div>
+                        <div>
+                            <p>Для семей</p>
+                            <input type="checkbox" id="Family" />
+                            <label for="Family"></label>
+                        </div>
+                        <span>Жилье для семей с 5-звёздочными <br> отзывами, кухней и телевизором.</span>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Для работы</p>
+                            <input type="checkbox" id="Work" />
+                            <label for="Work"></label>
+                        </div>
+                        <span>Первоклассное жилье, где есть всё<br>
+                                необходимое для деловой поездки:<br>
+                                рабочее место, Wi-Fi и функция<br>
+                                самостоятельного прибытия.</span>
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+        <div class="third_filter">
+
+            <div class="bron">
+                <div>
+                    <p>Мгновенное бронирование</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Объявления, которые можно забронировать, <br>не дожидаясь подтверждения хозяина.</span>
+                </div>
+
+            </div>
+            <h2 class="upper_text rooms">Комнаты и кровати</h2>
+            <div class="spinner">
+
+                <div>
+                    <p>Кровати</p>
+                    <div class="spin_body">
+                        <div class="btn_min btn_spin">-</div>
+
+                        <p class="num">0</p>
+                        <div class="btn_plus btn_spin">+</div>
+                    </div>
+                </div>
+                <div>
+                    <p>Спальни</p>
+                    <div class="spin_body">
+                        <div class="btn_min btn_spin">-</div>
+
+                        <p class="num">0</p>
+                        <div class="btn_plus btn_spin">+</div>
+                    </div>
+                </div>
+                <div>
+                    <p>Ванные комнаты</p>
+                    <div class="spin_body">
+                        <div class="btn_min btn_spin">-</div>
+
+                        <p class="num">0</p>
+                        <div class="btn_plus btn_spin">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comfort checkboxes">
+            <h2 class="upper_text">Удобства</h2>
+            <fieldset>
+                <div><p>Кухня</p><input type="checkbox" id="Kitchen" /><label for="Kitchen"></label></div>
+                <div><p>Кондиционер</p><input type="checkbox" id="conditioning" /><label for="conditioning"></label></div>
+                <div><p>Стиральная машина</p><input type="checkbox" id="Washer" /><label for="Washer"></label></div>
+                <div><p>Wi-Fi</p><input type="checkbox" id="Wi-Fi" /><label for="Wi-Fi"></label></div>
+                <div><p>Утюг</p><input type="checkbox" id="Iron" /><label for="Iron"></label></div>
+                <div><p>Фен</p><input type="checkbox" id="Hair" /><label for="Hair"></label></div>
+                <div><p>Телевизор</p><input type="checkbox" id="TV" /><label for="TV"></label></div>
+                <div><p>Шкаф</p><input type="checkbox" id="Cupboard" /><label for="Cupboard"></label></div>
+                <div><p>Дерной замок</p><input type="checkbox" id="lock" /><label for="lock"></label></div>
+                <div><p>Датчик дыма</p><input type="checkbox" id="Smoke" /><label for="Smoke"></label></div>
+                <div><p>Отопление</p><input type="checkbox" id="Heating" /><label for="Heating"></label></div>
+                <div><p>Завтрак</p><input type="checkbox" id="Breakfast" /><label for="Breakfast"></label></div>
+                <div><p>Камин</p><input type="checkbox" id="Fireplace" /><label for="Fireplace"></label></div>
+                <div><p>Плечики</p><input type="checkbox" id="Hangers" /><label for="Hangers"></label></div>
+                <div><p>Место для работы на ноутбуке</p><input type="checkbox" id="laptop" /><label for="laptop"></label></div>
+                <div><p>Кроватка</p><input type="checkbox" id="Crib" /><label for="Crib"></label></div>
+                <div><p>Стул для кормления</p><input type="checkbox" id="chair" /><label for="chair"></label></div>
+                <div><p>Самостоятельное прибытие</p><input type="checkbox" id="arrival" /><label for="arrival"></label></div>
+                <div><p>Пожарная сигнализиция</p><input type="checkbox" id="alarm" /><label for="alarm"></label></div>
+                <div><p>Детектор угарного газа</p><input type="checkbox" id="detector" /><label for="detector"></label></div>
+                <div><p>Отдельная ванная комната</p><input type="checkbox" id="bathroom" /><label for="bathroom"></label></div>
+            </fieldset>
+            <p class="show_all">Показать все удобства</p>
+
+        </div>
+        <div class="room checkboxes">
+            <h2 class="upper_text">Помещения</h2>
+            <fieldset>
+                <div><p>Бесплатная парковка</p><input type="checkbox" id="Free_park" /><label for="Free_park"></label></div>
+                <div><p>Спортзал</p><input type="checkbox" id="Gym" /><label for="Gym"></label></div>
+                <div><p>Джакузи</p><input type="checkbox" id="jacuzzi" /><label for="jacuzzi"></label></div>
+                <div><p>Бассейн</p><input type="checkbox" id="Pool" /><label for="Pool"></label></div>
+            </fieldset>
+        </div>
+        <div class="house-rules checkboxes">
+            <h2 class="upper_text">Правила дома</h2>
+            <fieldset>
+                <div><p class="big_p">Подходит для проведения мероприятий</p><input type="checkbox" id="Party" /><label for="Party"></label></div>
+                <div><p>Можно с питомцами</p><input type="checkbox" id="Pets" /><label for="Pets"></label></div>
+                <div><p>Можно курить</p><input type="checkbox" id="Can_smoke" /><label for="Can_smoke"></label></div>
+            </fieldset>
+        </div>
+        <div class="next">Применить</div>
+
+    </div>
+</section>
+<main>
+    <div class="main_content">
+        <h3 class="count-houses">Более <span>300</span> вариантов жилья</h3>
+        <div class="blocks">
+            <div class="block">
+                <div class="block-for-slider">
+                    <div class="viewport">
+                        <ul class="slidewrapper">
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-gostinoy-v-loft-stile-33.jpg'%}" alt="1" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-18.jpg'%}" alt="2" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-19.jpg'%}" alt="3" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-20.jpg'%}" alt="4" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-22.jpg'%}" alt="5" class="slide-img"></li>
+                        </ul>
+                        <div class="prev-next-btns">
+                            <div class="prev-btn"><img src="{% static 'works/filter_form/img/left-arrow%20(1).svg'%}"></div>
+                            <div class="next-btn"><img src="{% static 'works/filter_form/img/right-arrow%20(1).svg'%}"></div>
+                        </div>
+                        <ul class="nav-btns">
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                        </ul>
+                    </div>
+                    <div class="current_block">1</div>
+
+                </div>
+                <p class="room-info">Квартира целиком <span> 1 кровать</span></p>
+                <p class="room-title">Евродвушка в самом центре города</p>
+                <p class="room-cost">1500 &#x20bd; за ночь</p>
+
+
+            </div>
+            <div class="block">
+                <div class="block-for-slider">
+                    <div class="viewport">
+                        <ul class="slidewrapper">
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-gostinoy-v-loft-stile-33.jpg'%}" alt="1" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-18.jpg'%}" alt="2" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-19.jpg'%}" alt="3" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-20.jpg'%}" alt="4" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-22.jpg'%}" alt="5" class="slide-img"></li>
+                        </ul>
+                        <div class="prev-next-btns">
+                            <div class="prev-btn"><img src="{% static 'works/filter_form/img/left-arrow%20(1).svg'%}"></div>
+                            <div class="next-btn"><img src="{% static 'works/filter_form/img/right-arrow%20(1).svg'%}"></div>
+                        </div>
+                        <ul class="nav-btns">
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                        </ul>
+                    </div>
+                    <div class="current_block">1</div>
+
+                </div>
+                <p class="room-info">Квартира целиком <span> 1 кровать</span></p>
+                <p class="room-title">Евродвушка в самом центре города</p>
+                <p class="room-cost">1500 &#x20bd; за ночь</p>
+
+
+            </div>
+            <div class="block">
+                <div class="block-for-slider">
+                    <div class="viewport">
+                        <ul class="slidewrapper">
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-gostinoy-v-loft-stile-33.jpg'%}" alt="1" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-18.jpg'%}" alt="2" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-19.jpg'%}" alt="3" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-20.jpg'%}" alt="4" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-22.jpg'%}" alt="5" class="slide-img"></li>
+                        </ul>
+                        <div class="prev-next-btns">
+                            <div class="prev-btn"><img src="{% static 'works/filter_form/img/left-arrow%20(1).svg'%}"></div>
+                            <div class="next-btn"><img src="{% static 'works/filter_form/img/right-arrow%20(1).svg'%}"></div>
+                        </div>
+                        <ul class="nav-btns">
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                        </ul>
+                    </div>
+                    <div class="current_block">1</div>
+
+                </div>
+                <p class="room-info">Квартира целиком <span> 1 кровать</span></p>
+                <p class="room-title">Евродвушка в самом центре города</p>
+                <p class="room-cost">1500 &#x20bd; за ночь</p>
+
+
+            </div>
+            <div class="block">
+                <div class="block-for-slider">
+                    <div class="viewport">
+                        <ul class="slidewrapper">
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-gostinoy-v-loft-stile-33.jpg'%}" alt="1" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-18.jpg'%}" alt="2" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-19.jpg'%}" alt="3" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-20.jpg'%}" alt="4" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-22.jpg'%}" alt="5" class="slide-img"></li>
+                        </ul>
+                        <div class="prev-next-btns">
+                            <div class="prev-btn"><img src="{% static 'works/filter_form/img/left-arrow%20(1).svg'%}"></div>
+                            <div class="next-btn"><img src="{% static 'works/filter_form/img/right-arrow%20(1).svg'%}"></div>
+                        </div>
+                        <ul class="nav-btns">
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                        </ul>
+                    </div>
+                    <div class="current_block">1</div>
+
+                </div>
+                <p class="room-info">Квартира целиком <span> 1 кровать</span></p>
+                <p class="room-title">Евродвушка в самом центре города</p>
+                <p class="room-cost">1500 &#x20bd; за ночь</p>
+
+
+            </div>
+            <div class="block">
+                <div class="block-for-slider">
+                    <div class="viewport">
+                        <ul class="slidewrapper">
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-gostinoy-v-loft-stile-33.jpg'%}" alt="1" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-18.jpg'%}" alt="2" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-19.jpg'%}" alt="3" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-20.jpg'%}" alt="4" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-22.jpg'%}" alt="5" class="slide-img"></li>
+                        </ul>
+                        <div class="prev-next-btns">
+                            <div class="prev-btn"><img src="{% static 'works/filter_form/img/left-arrow%20(1).svg'%}"></div>
+                            <div class="next-btn"><img src="{% static 'works/filter_form/img/right-arrow%20(1).svg'%}"></div>
+                        </div>
+                        <ul class="nav-btns">
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                        </ul>
+                    </div>
+                    <div class="current_block">1</div>
+
+                </div>
+                <p class="room-info">Квартира целиком <span> 1 кровать</span></p>
+                <p class="room-title">Евродвушка в самом центре города</p>
+                <p class="room-cost">1500 &#x20bd; за ночь</p>
+
+
+            </div>
+            <div class="block">
+                <div class="block-for-slider">
+                    <div class="viewport">
+                        <ul class="slidewrapper">
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-gostinoy-v-loft-stile-33.jpg'%}" alt="1" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-18.jpg'%}" alt="2" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-19.jpg'%}" alt="3" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-20.jpg'%}" alt="4" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-22.jpg'%}" alt="5" class="slide-img"></li>
+                        </ul>
+                        <div class="prev-next-btns">
+                            <div class="prev-btn"><img src="{% static 'works/filter_form/img/left-arrow%20(1).svg'%}"></div>
+                            <div class="next-btn"><img src="{% static 'works/filter_form/img/right-arrow%20(1).svg'%}"></div>
+                        </div>
+                        <ul class="nav-btns">
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                        </ul>
+                    </div>
+                    <div class="current_block">1</div>
+
+                </div>
+                <p class="room-info">Квартира целиком <span> 1 кровать</span></p>
+                <p class="room-title">Евродвушка в самом центре города</p>
+                <p class="room-cost">1500 &#x20bd; за ночь</p>
+
+
+            </div>
+            <div class="block">
+                <div class="block-for-slider">
+                    <div class="viewport">
+                        <ul class="slidewrapper">
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-gostinoy-v-loft-stile-33.jpg'%}" alt="1" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-18.jpg'%}" alt="2" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-19.jpg'%}" alt="3" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-20.jpg'%}" alt="4" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-22.jpg'%}" alt="5" class="slide-img"></li>
+                        </ul>
+                        <div class="prev-next-btns">
+                            <div class="prev-btn"><img src="{% static 'works/filter_form/img/left-arrow%20(1).svg'%}"></div>
+                            <div class="next-btn"><img src="{% static 'works/filter_form/img/right-arrow%20(1).svg'%}"></div>
+                        </div>
+                        <ul class="nav-btns">
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                        </ul>
+                    </div>
+                    <div class="current_block">1</div>
+
+                </div>
+                <p class="room-info">Квартира целиком <span> 1 кровать</span></p>
+                <p class="room-title">Евродвушка в самом центре города</p>
+                <p class="room-cost">1500 &#x20bd; за ночь</p>
+
+
+            </div>
+            <div class="block">
+                <div class="block-for-slider">
+                    <div class="viewport">
+                        <ul class="slidewrapper">
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-gostinoy-v-loft-stile-33.jpg'%}" alt="1" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-18.jpg'%}" alt="2" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-19.jpg'%}" alt="3" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-20.jpg'%}" alt="4" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-22.jpg'%}" alt="5" class="slide-img"></li>
+                        </ul>
+                        <div class="prev-next-btns">
+                            <div class="prev-btn"><img src="{% static 'works/filter_form/img/left-arrow%20(1).svg'%}"></div>
+                            <div class="next-btn"><img src="{% static 'works/filter_form/img/right-arrow%20(1).svg'%}"></div>
+                        </div>
+                        <ul class="nav-btns">
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                        </ul>
+                    </div>
+                    <div class="current_block">1</div>
+
+                </div>
+                <p class="room-info">Квартира целиком <span> 1 кровать</span></p>
+                <p class="room-title">Евродвушка в самом центре города</p>
+                <p class="room-cost">1500 &#x20bd; за ночь</p>
+
+
+            </div>
+            <div class="block">
+                <div class="block-for-slider">
+                    <div class="viewport">
+                        <ul class="slidewrapper">
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-gostinoy-v-loft-stile-33.jpg'%}" alt="1" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-18.jpg'%}" alt="2" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-19.jpg'%}" alt="3" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-20.jpg'%}" alt="4" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-22.jpg'%}" alt="5" class="slide-img"></li>
+                        </ul>
+                        <div class="prev-next-btns">
+                            <div class="prev-btn"><img src="{% static 'works/filter_form/img/left-arrow%20(1).svg'%}"></div>
+                            <div class="next-btn"><img src="{% static 'works/filter_form/img/right-arrow%20(1).svg'%}"></div>
+                        </div>
+                        <ul class="nav-btns">
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                        </ul>
+                    </div>
+                    <div class="current_block">1</div>
+
+                </div>
+                <p class="room-info">Квартира целиком <span> 1 кровать</span></p>
+                <p class="room-title">Евродвушка в самом центре города</p>
+                <p class="room-cost">1500 &#x20bd; за ночь</p>
+
+
+            </div>
+            <div class="block">
+                <div class="block-for-slider">
+                    <div class="viewport">
+                        <ul class="slidewrapper">
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-gostinoy-v-loft-stile-33.jpg'%}" alt="1" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-18.jpg'%}" alt="2" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-19.jpg'%}" alt="3" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-20.jpg'%}" alt="4" class="slide-img"></li>
+                            <li class="slide"><img src="{% static 'works/filter_form/img/remont-kukhni-v-loft-stile-22.jpg'%}" alt="5" class="slide-img"></li>
+                        </ul>
+                        <div class="prev-next-btns">
+                            <div class="prev-btn"><img src="{% static 'works/filter_form/img/left-arrow%20(1).svg'%}"></div>
+                            <div class="next-btn"><img src="{% static 'works/filter_form/img/right-arrow%20(1).svg'%}"></div>
+                        </div>
+                        <ul class="nav-btns">
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                            <li class="slide-nav-btn"></li>
+                        </ul>
+                    </div>
+                    <div class="current_block">1</div>
+
+                </div>
+                <p class="room-info">Квартира целиком <span> 1 кровать</span></p>
+                <p class="room-title">Евродвушка в самом центре города</p>
+                <p class="room-cost">1500 &#x20bd; за ночь</p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+
+<footer>
+
+</footer>
+
+<script id="jquery" language="JavaScript" src="{% static 'works/filter_form/scripts/jquery.js'%}"></script>
+<script language="JavaScript" src="{% static 'works/filter_form/scripts/JQ_UI.js'%}"></script>
+<script language="JavaScript" src="{% static 'works/filter_form/scripts/script.js'%}"></script>
+</body>
+</html>

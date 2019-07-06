@@ -1,0 +1,370 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Template</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'works/consald/style/normalize.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'works/consald/style/slick.css'%}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'works/consald/style/slick-theme.css'%}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'works/consald/style.css'%}">
+
+</head>
+
+<body>
+<header>
+    <img src="{% static 'works/consald/img/logo.png'%}" alt="" class="logo">
+    <div class="menu">
+        <a href="#about_us">О нас</a>
+        <a class="active_menu" href="#services">Услуги</a>
+        <a href="#commerce">E-COMMERCE</a>
+        <a href="#marketing">Маркетинг</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contacts">Контакты</a>
+    </div>
+    <div class="contacts">
+        <img src="{% static 'works/consald/img/tel.png'%}" alt="">
+        <div>
+            <p>Телефон / WhatsApp</p>
+            <a href="tel:+8615618935795">+86 156-1893-5795</a><br>
+            <a href="tel:+78005118103">+7 800-511-8103</a><br>
+        </div>
+    </div>
+    <div class="change_lang">
+        <img src="{% static 'works/consald/img/angl.png'%}" alt="">
+        <img src="{% static 'works/consald/img/rus.png'%}" alt="">
+    </div>
+
+</header>
+
+<main>
+    <a name="about_us"></a>
+    <div  class="about_us">
+        <h1>Ваша дверь в Китай <br> <span>Бизнес и Финансы</span></h1>
+        <div class="content">
+            <div class="about">
+                <h4>О нас</h4>
+                <div>
+                    <p>Наш опыт в работе с Китаем более 5 лет. Самая главная проблема — это различие менталитетов, я не против китайцев, я их очень люблю, но то, что наши менталитеты очень разные — это факт. Поэтому хорошо иметь консультанта, который много вещей сделал сам, относящихся к бизнесу в Китае. Конечно мы не можем делать все, есть некоторые вещи, которые только китайцы могут сделать, но мы также поможем вам найти таких людей. И мы честны с вами и с самими собой. То, что мы делаем — это нужные вещи в нужное время. И этого достаточно.</p>
+
+                </div>
+            </div>
+
+
+
+            <form class="call_back">
+                <h4>запросить обратный звонок</h4>
+                <div>
+                    <input placeholder="Имя" id="Name_input">
+                    <input placeholder="Ваш e-mail" id="Email_input">
+                    <input placeholder="Ваш WhatsApp" id="Whats_input">
+                    <input placeholder="Тема сообщения" id="heme_input">
+                    <textarea placeholder="Сообщение" id="Text_input"></textarea>
+                    <div class="btn"><p>Отправить запрос</p></div>
+                    <button style="display:none;" type="submit">Отправить запрос</button>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+    <div class="we-give">
+        <div class="content">
+            <h4>Мы предлагаем</h4>
+            <div class="tips">
+                <div class="tip">
+                    <img src="{% static 'works/consald/img/reg_com.png'%}" alt="">
+                    <p>Процедуры <br> регистрации компании</p>
+                </div>
+                <div class="tip">
+                    <img src="{% static 'works/consald/img/chin_mar.png'%}" alt="">
+                    <p>Маркетинг в Китае</p>
+                </div>
+                <div class="tip">
+                    <img src="{% static 'works/consald/img/proc.png'%}" alt="">
+                    <p>Процедуры <br> регистрации и ведения на электронных платформах</p>
+                </div>
+                <div class="tip">
+                    <img src="{% static 'works/consald/img/shanh.png'%}" alt="">
+                    <p>Выставки в Шанхае и <br> в разных городах Китая</p>
+                </div>
+                <div class="tip">
+                    <img src="{% static 'works/consald/img/find.png'%}" alt="">
+                    <p>Услуги поиска кадров <br> для вашей компании</p>
+                </div>
+                <div class="tip">
+                    <img src="{% static 'works/consald/img/nal_uch.png'%}" alt="">
+                    <p>Налоговый и бухгалтерский учет вашей компании</p>
+                </div>
+                <div class="tip">
+                    <img src="{% static 'works/consald/img/reg_ch.png'%}" alt="">
+                    <p>Регистрация <br> торговой марки в Китае</p>
+                </div>
+                <div class="tip">
+                    <img src="{% static 'works/consald/img/documents.png'%}" alt="">
+                    <p>Сбор и подача <br> документов для визы</p>
+                </div>
+                <div class="tip">
+                    <img src="{% static 'works/consald/img/ur_ysl.png'%}" alt="">
+                    <p>Юридические услуги</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a name="services"></a>
+    <div class="services">
+        <h4>Услуги</h4>
+        <div class="tips">
+            <div class="tip">
+                <div class="arrow">
+                    <img src="{% static 'works/consald/img/3_arrow.png'%}" alt="">
+                    <p>Компании в Китае</p>
+                </div>
+                <div class="wrap">
+                    <div class="text">
+                        <h5>Консалтинговая компания</h5>
+                        <p>Простейший вид компании для открытия. Все что нужно для открытия — это бизнес лицензия. Но направление бизнеса также не такое большое. Если все, что вы планируете делать — это консультации, продвижение и реклама, то такой вид компании для вас.</p>
+                    </div>
+                    <div class="text">
+                        <h5>Торговая компания</h5>
+                        <p>Если у вас есть, что предложить на китайский рынок — то это ваша компания. Открытие занимает немного больше времени, но и возможностей больше. Если вы планируете заниматься импортом и экспортом — идите и регистрируйте прямо сейчас!</p>
+                    </div>
+                    <div class="text">
+                        <h5>Ресторан или кафе</h5>
+                        <p>Если вы планируете открыть ресторан или кафе, то это ваш тип компании. Теперь вам обязательно минимум на 3 года снять помещение, в котором планируете открывать кафе, и сборы зависят от района, в котором будет находиться ваш  ресторан. Также сюда можно отнести компанию по импорту и экспорту продуктов питания. Здесь уже потребуется карантинная лицензия.</p>
+                    </div>
+                    <div class="text">
+                        <h5>Производство</h5>
+                        <p>Производства в Китае одни из самых дешевых. Рабочая сила недорогая, аренда также. Поэтому большинство производств находится именно в Китае.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tip">
+                <div class="arrow">
+                    <img src="{% static 'works/consald/img/3_arrow.png'%}" alt="">
+                    <p>Другие услуги</p>
+                </div>
+                <div class="wrap">
+                    <div class="text">
+                        <h5>Поиск кадров</h5>
+                        <p>Очень трудно найти работников, когда вы не знаете, где их искать. Поэтому проще доверить это дело кому-то опытному.</p>
+                    </div>
+                    <div class="text">
+                        <h5>Налоговый и бухгалтерский учет</h5>
+                        <p>В Китае соблюдать налоговое законодательство очень важно, штрафы за это немалые, поэтому как только запустили свой бизнес, обзаведитесь грамотным бухгалтером. Мы можем предложить услуги аутсорсинга на выгодных условиях.</p>
+                    </div>
+                    <div class="text">
+                        <h5>Регистрация торговой марки</h5>
+                        <p>Если вы представляете какой-либо продукт в Китае — обязательно регистрируйте торговую марку на него. Иначе грозят большие затраты в случае успешного выхода продукта на китайский рынок. Чем успешнее, тем затратнее.</p>
+                    </div>
+                    <div class="text">
+                        <h5>Виза</h5>
+                        <p>Если вы хотите проживать в Китае во время становления вашего бизнеса — то вам лучше подать на резиденцию, что очень просто, когда есть бизнес-лицензия. Главное собрать необходимые документы, а вот с этим посложнее, но мы можем вам в этом помочь.</p>
+                    </div>
+                    <div class="text">
+                        <h5>Юридические услуги</h5>
+                        <p>В нашем мире все может произойти: обманули, не заплатили и тд. Поэтому чтобы обезопасить себя от таких вещей и свести риски к минимуму, то желательно обзавестись своим юристом.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <a name="commerce"></a>
+    <div class="commerce">
+        <h4>Платформы E-COMMERCE</h4>
+        <div class="tips">
+            <div class="tip">
+                <img src="{% static 'works/consald/img/1.png'%}">
+                <img src="{% static 'works/consald/img/com_ar.png'%}" alt="">
+
+                <div>
+                    <h5>Taobao Shop</h5>
+                    <p>Тaobao — cамая известная платформа продаж в Китае.  Люди покупают через нее в среднем 15 раз за месяц. Если вы хотите хорошо продавать ваши товары — это самая первая платформа, которой вы должны воспользоваться.</p>
+                </div>
+            </div>
+            <div class="tip">
+                <img src="{% static 'works/consald/img/2.png'%}">
+                <img src="{% static 'works/consald/img/com_ar.png'%}" alt="">
+
+                <div>
+                    <h5>WeChat Shop</h5>
+                    <p>Wechat - одна из крупнейших социальных сетей в Китае. Люди совершают платежи через нее, отправляют деньги и подарки, разделяют моменты жизни. Для людей, использующих мобильные телефоны — это самая лучшая платформа для покупок, а у вашего бизнеса для продаж.</p>
+                </div>
+            </div>
+            <div class="tip">
+                <img src="{% static 'works/consald/img/3.png'%}">
+                <img src="{% static 'works/consald/img/com_ar.png'%}" alt="">
+
+                <div>
+                    <h5>Tmall Shop</h5>
+                    <p>Tmall — практически Таоbao, но платформа работает от бизнеса к клиенту. Поэтому здесь только компании и корпорации могут открыть магазин. Если люди боятся покупать на Тaobao подделки — то в Tmall всегда можно найти официальный магазин.</p>
+                </div>
+            </div>
+            <div class="tip">
+                <img src="{% static 'works/consald/img/4.png'%}">
+                <img src="{% static 'works/consald/img/com_ar.png'%}" alt="">
+
+                <div>
+                    <h5>JD Shop</h5>
+                    <p>JD является более молодой платформой, но совершенно не отстающей. И регистрация здесь обойдется дешевле, чем на Tmall.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a name="marketing"></a>
+    <div class="marketing">
+        <div class="content">
+            <div class="tip">
+                <div>
+                    <img src="{% static 'works/consald/img/du.png'%}">
+                    <h3>Baidu</h3>
+                </div>
+                <p>Baidu — самый большой поисковик в Китае. Он захватывает более 90 процентов всей аудитории Китая. Продвижение здесь похоже на продвижение в Google, правда цены на порядок выше.</p>
+            </div>
+            <div class="tip no_img">
+                <div>
+                    <h3>Выставки</h3>
+                </div>
+                <p>Выставки — это один из лучших методов поиска оптовых покупателей. Также это отличное место для поиска товаров для экспорта из Китая. Все, что вам нужно — это определиться с направлением, которое вам интересно.</p>
+
+            </div>
+            <div class="tip no_img">
+                <div>
+                    <h3>Промо акции</h3>
+                </div>
+                <p>Организация промо акций — также важнейший метод продвижения ваших продуктов или услуг. Здесь все зависит от бюджета, мы можем помочь вам с организацией промо акций на любой бюджет.</p>
+
+            </div>
+            <div class="tip">
+                <div>
+                    <img src="{% static 'works/consald/img/ali.png'%}">
+                    <h3>Alibaba</h3>
+                </div>
+                <p>Alibaba занимает большое место в торговле в Китае и даже по всему миру. Поэтому продвижение на площадках данного гиганта может оказать большую поддержку в продажах.</p>
+
+            </div>
+            <div class="tip">
+                <div>
+                    <img src="{% static 'works/consald/img/ten.png'%}">
+                    <h3>Tencent</h3>
+                </div>
+                <p>Tencent — огромная корпорация, основным направлением которой являются соцсети и игры. У них есть свой департамент маркетинга, поэтому продвижение через данную корпорацию может дать свои плоды.</p>
+
+            </div>
+            <div class="tip">
+                <div>
+                    <img src="{% static 'works/consald/img/sina.png'%}">
+                    <h3>Sina<br>Weibo</h3>
+                </div>
+                <p>Самая большая социальная сеть в Китае. В ней много возможностей для продвижения ваших товаров.</p>
+            </div>
+        </div>
+    </div>
+    <div class="Hong">
+        <div class="content">
+            <div class="tips">
+                <div class="tip">
+                    <h5>Уставной капитал</h5>
+                    <p>Нет необходимости вкладывать регистрационный капитал сразу. Его можно внести в течение 30 лет. Для полностью принадлежащих иностранцам компаний минимальный уставной капитал составляет 20000 долларов.</p>
+                </div>
+                <div class="tip">
+                    <h5>Юридический адрес для регистрации</h5>
+                    <p>Для юридического адреса компании должен быть снят офис минимум на год. Также есть возможность получить виртуальный адрес, который позволяет вам быть более гибким.</p>
+                </div>
+                <div class="tip">
+                    <h5>Учредители</h5>
+                    <p>В такого рода компаниях, которые называют WOFE (Wholly foreign owned enterprise), учредителями могут быть только иностранцы, не требуется искать китайских партнеров.</p>
+                </div>
+                <div class="tip">
+                    <h5>Зона свободной торговли</h5>
+                    <p>Компании находятся в Зоне Свободной торговли, в которой регистрация намного легче, чем в материковом Китае.</p>
+                </div>
+            </div>
+            <div class="main_text">
+                <h3>Гонконг</h3>
+                <p>Гонконг давным давно является привлекательным для предпринимателей, своеобразный азиатский хаб, в который сходятся множество желающих бизнесменов с различными целями. Налоговая система очень сильно упрощена, а если вы не ведете деятельность в нем,, а используете его как «перевалочный пункт», то здесь в принципе никаких налогов не платится. Этим он и привлекает большинство бизнесменов. С 2015 года в банках Гонконга было введено правило, запрещающее открытие счета выходцам из многих стран, в том числе России и Украины. Но сейчас многие банки стали понимать, что теряют хорошую прибыль от этого, и теперь есть возможность договориться. Обращайтесь за открытием компании в Гонконге в нашу компанию, мы устроим для этого максимально подходящий для вас план.</p>
+            </div>
+        </div>
+
+    </div>
+    <a name="gallery"></a>
+    <div class="gallery_wrap">
+        <h4>Галерея</h4>
+        <div class="gallery">
+            <div><img src="{% static 'works/consald/img/image3.jpg'%}"></div>
+            <div><img src="{% static 'works/consald/img/image3.jpg'%}"></div>
+            <div><img src="{% static 'works/consald/img/image3.jpg'%}"></div>
+            <div><img src="{% static 'works/consald/img/image3.jpg'%}"></div>
+            <div><img src="{% static 'works/consald/img/image3.jpg'%}"></div>
+            <div><img src="{% static 'works/consald/img/image3.jpg'%}"></div>
+            <div><img src="{% static 'works/consald/img/image3.jpg'%}"></div>
+            <div><img src="{% static 'works/consald/img/image3.jpg'%}"></div>
+
+        </div>
+        <iframe style="margin-top: 50px" width="770" height="430" src="https://www.youtube.com/embed/xyRmQ7WuuNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <a name="contacts"></a>
+    <div class="contact_us">
+        <h4>Если у вас есть вопросы, свяжитесь с нами!</h4>
+        <div class="content">
+            <div class="contact">
+                <div class="contacts">
+                    <img src="{% static 'works/consald/img/yel_tel.png'%}" alt="">
+                    <div>
+                        <p>Телефон / WhatsApp</p>
+                        <a href="tel:+8615618935795">+86 156-1893-5795</a><br>
+                        <a href="tel:+78005118103">+7 800-511-8103</a><br>
+                    </div>
+                </div>
+                <div class="mail">
+                    <img src="{% static 'works/consald/img/mail.png'%}" alt="">
+                    <p>I.Leonov87@yandex.ru</p>
+                </div>
+                <div class="addr">
+                    <img src="{% static 'works/consald/img/addr.png'%}" alt="">
+                    <div>
+                        <p>Shanghai, Minhang,</p>
+                        <span>1003 room, 851 Hengnan Road</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <form class="call_back">
+                <h4>запросить обратный звонок</h4>
+                <div>
+                    <input placeholder="Имя" id="Contact_Name_input">
+                    <input placeholder="Ваш e-mail" id="Contact_Email_input">
+                    <input placeholder="Ваш WhatsApp" id="Contact_Whats_input">
+                    <input placeholder="Тема сообщения" id="Contact_Theme_input">
+                    <textarea placeholder="Сообщение" id="Contact_Text_input"></textarea>
+                    <div class="btn"><p>Отправить запрос</p></div>
+                    <button style="display:none;" type="submit">Отправить запрос</button>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+
+</main>
+
+
+
+<footer>
+
+</footer>
+
+<script id="jquery" language="JavaScript" src="{% static 'works/consald/scripts/jquery.js'%}"></script>
+<script type="text/javascript" src="{% static 'works/consald/scripts/slick.min.js'%}"></script>
+<script language="JavaScript" src="{% static 'works/consald/scripts/script.js'%}"></script>
+</body>
+</html>

@@ -44,3 +44,17 @@ def skype(request):
 def t_main(request):
 
     return render(request, 'templates/works/t_main/index.html')
+
+def filter_form(request):
+
+    return render(request, 'templates/works/filter_form/index.html')
+
+
+def create_form(request):
+
+    return render(request, 'templates/works/create_form/index.html')
+
+
+def consald(request):
+
+    return render(request, 'templates/works/consald/index.html')

@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Template</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'works/create_form/style/JQ_UI.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'works/create_form/style.css'%}">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+</head>
+
+<body>
+<header>
+    <div class="logo_text">
+        <img src="{% static 'works/create_form/img/logo.png'%}">
+        <p>Здравствуйте, Ruslan! Мы поможем вам в создании объявления.</p>
+    </div>
+    <div class="options">
+        <a href="#">Предложить свое жилье</a>
+        <a href="#">Выйти</a>
+    </div>
+</header>
+
+<main>
+<div class="main_wrap">
+    <section class="combox">
+        <div class="town dropdown">
+            <p class="upper_text">Город</p>
+            <div class="town-widget">
+                <select id="town-combobox">
+                    <option value="">Select one...</option>
+                    <option>Квартира</option>
+                    <option>Комната</option>
+                    <option>Дом</option>
+                    <option>Квартира</option>
+                    <option>Комната</option>
+                    <option>Дом</option>
+                    <option>Квартира</option>
+                    <option>Комната</option>
+                    <option>Дом</option>
+                    <option>Квартира</option>
+                    <option>Комната</option>
+                    <option>Дом</option>
+                    <option>Квартира</option>
+                    <option>Комната</option>
+                    <option>Дом</option>
+                </select>
+            </div>
+        </div>
+        <div class="address">
+            <p class="upper_text">Адрес</p>
+            <input placeholder="Ввести адрес">
+        </div>
+        <div class="type dropdown">
+            <p class="upper_text">тип жилья</p>
+            <div class="town-widget">
+                <select id="type-combobox">
+                    <option value=""></option>
+                    <option>Квартира</option>
+                    <option>Комната</option>
+                    <option>Дом</option>
+                </select>
+            </div>
+        </div>
+
+    </section>
+    <section class="second_sec">
+        <div class="comfort checkboxes">
+            <h2 class="upper_text">Удобства</h2>
+            <fieldset>
+                <div><p>Кухня</p><input type="checkbox" id="Kitchen" /><label for="Kitchen"></label></div>
+                <div><p>Кондиционер</p><input type="checkbox" id="conditioning" /><label for="conditioning"></label></div>
+                <div><p>Стиральная машина</p><input type="checkbox" id="Washer" /><label for="Washer"></label></div>
+                <div><p>Wi-Fi</p><input type="checkbox" id="Wi-Fi" /><label for="Wi-Fi"></label></div>
+                <div><p>Утюг</p><input type="checkbox" id="Iron" /><label for="Iron"></label></div>
+                <div><p>Фен</p><input type="checkbox" id="Hair" /><label for="Hair"></label></div>
+                <div><p>Телевизор</p><input type="checkbox" id="TV" /><label for="TV"></label></div>
+                <div><p>Шкаф</p><input type="checkbox" id="Cupboard" /><label for="Cupboard"></label></div>
+                <div><p>Дерной замок</p><input type="checkbox" id="lock" /><label for="lock"></label></div>
+                <div><p>Датчик дыма</p><input type="checkbox" id="Smoke" /><label for="Smoke"></label></div>
+                <div><p>Отопление</p><input type="checkbox" id="Heating" /><label for="Heating"></label></div>
+                <div><p>Завтрак</p><input type="checkbox" id="Breakfast" /><label for="Breakfast"></label></div>
+                <div><p>Камин</p><input type="checkbox" id="Fireplace" /><label for="Fireplace"></label></div>
+                <div><p>Плечики</p><input type="checkbox" id="Hangers" /><label for="Hangers"></label></div>
+                <div><p>Место для работы на ноутбуке</p><input type="checkbox" id="laptop" /><label for="laptop"></label></div>
+                <div><p>Кроватка</p><input type="checkbox" id="Crib" /><label for="Crib"></label></div>
+                <div><p>Стул для кормления</p><input type="checkbox" id="chair" /><label for="chair"></label></div>
+                <div><p>Самостоятельное прибытие</p><input type="checkbox" id="arrival" /><label for="arrival"></label></div>
+                <div><p>Пожарная сигнализиция</p><input type="checkbox" id="alarm" /><label for="alarm"></label></div>
+                <div><p>Детектор угарного газа</p><input type="checkbox" id="detector" /><label for="detector"></label></div>
+                <div><p>Отдельная ванная комната</p><input type="checkbox" id="bathroom" /><label for="bathroom"></label></div>
+            </fieldset>
+
+        </div>
+        <div>
+            <div class="use checkboxes">
+                <h2 class="upper_text">Что гости могут использовать</h2>
+                <fieldset>
+                    <div><p>Кухня</p><input type="checkbox" id="Kitchen_use" /><label for="Kitchen_use"></label></div>
+                    <div><p>Бассейн</p><input type="checkbox" id="Pool" /><label for="Pool"></label></div>
+                    <div><p>Лифт</p><input type="checkbox" id="Elevator" /><label for="Elevator"></label></div>
+                    <div><p>Праченая</p><input type="checkbox" id="Laundry" /><label for="Laundry"></label></div>
+                    <div><p>Бесплатная парковка</p><input type="checkbox" id="Free parking" /><label for="Free parking"></label></div>
+                    <div><p>Спротзал</p><input type="checkbox" id="Gym" /><label for="Gym"></label></div>
+                    <div><p>Джакузи</p><input type="checkbox" id="Jacuzzi" /><label for="Jacuzzi"></label></div>
+                </fieldset>
+                <div class="spinner">
+                    <div>
+                        <p>Кол-во комнат</p>
+                        <div class="spin_body">
+                            <div class="btn_min btn_spin">-</div>
+
+                            <p class="num">0</p>
+                            <div class="btn_plus btn_spin">+</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Кровати для сна</p>
+                        <div class="spin_body">
+                            <div class="btn_min btn_spin">-</div>
+
+                            <p class="num">0</p>
+                            <div class="btn_plus btn_spin">+</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Ванные комнаты</p>
+                        <div class="spin_body">
+                            <div class="btn_min btn_spin">-</div>
+
+                            <p class="num">0</p>
+                            <div class="btn_plus btn_spin">+</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Макс число гостей</p>
+                        <div class="spin_body">
+                            <div class="btn_min btn_spin">-</div>
+
+                            <p class="num">0</p>
+                            <div class="btn_plus btn_spin">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last_one">
+            <div class="rules">
+                <h2 class="upper_text">Правила дома</h2>
+                <p>Напишите краткое описание вашего места. Вы можете выделить, что особенного в вашем пространстве, окрестности, и как вы будете взаимодействовать с гостями. Добавьте информацию о том, как обойти ваш город или район, например, близлежащий общественный транспорт, советы по вождению или хорошие пешеходные маршруты.</p>
+                <textarea placeholder="Описание"></textarea>
+            </div>
+            <div class="naming">
+                <div>
+                <h2 class="upper_text">Название вашего места</h2>
+                <p>Будет в названии обьявления</p>
+                </div>
+                <input placeholder="Название">
+            </div>
+            <div class="cost_night">
+                <h2 class="upper_text">Цена за ночь</h2>
+                <input placeholder="0 &#x20bd;">
+            </div>
+            <div class="phone_num">
+                    <h2 class="upper_text">Номер телефона</h2>
+                    <input id="phone" type="text" placeholder="+7(   )   -  -  ">
+            </div>
+        </div>
+        <div class="next">Далее</div>
+    </section>
+
+</div>
+
+</main>
+
+
+<footer>
+
+</footer>
+
+<script id="jquery" language="JavaScript" src="{% static 'works/create_form/scripts/jquery.js'%}"></script>
+<script language="JavaScript" src="{% static 'works/create_form/scripts/JQ_UI.js'%}"></script>
+<script language="JavaScript" src="{% static 'works/create_form/scripts/jquery.maskedinput.min.js'%}"></script>
+<script language="JavaScript" src="{% static 'works/create_form/scripts/script.js'%}"></script>
+</body>
+</html>

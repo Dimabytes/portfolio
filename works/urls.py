@@ -12,4 +12,7 @@ urlpatterns = [
     path("tur_for_work/", works.views.tur_for_work, name="tur_for_work"),
     path("skype/", works.views.skype, name="skype"),
     path("t_main/", works.views.t_main, name="t_main"),
+    path("consald/", works.views.consald, name="filter_form"),
+    path("create_form/", works.views.create_form, name="create_form"),
+    path("filter_form/", works.views.filter_form, name="filter_form"),
 ]
