@@ -37,7 +37,7 @@ class Main(View):
         ip = get_ip(request)
         ip_info = IpInfo(ip)
         try:
-            limit = add_ip(ip, 1, 2)
+            limit = add_ip(ip, 2, 7)
         except BaseException:
             limit = True
         if limit:
@@ -63,7 +63,6 @@ class Contact(View):
         try:
             limit = add_ip(ip, 2, 2)
         except BaseException:
-            print(222)
             limit = True
         if limit:
             email = request.POST.get('email')
