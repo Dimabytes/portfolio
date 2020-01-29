@@ -1,6 +1,6 @@
 from django import forms
 from .models import Contact
-
+from django.utils.translation import ugettext_lazy as _
 
 class ConnectForm(forms.ModelForm):
     """
@@ -16,16 +16,16 @@ class ConnectForm(forms.ModelForm):
                 'cols': '26',
                 'rows': '7',
                 'class': 'Text_area1',
-                'placeholder': "Your message",
+                'placeholder': _(u"Ваше сообщение"),
             })
         self.fields['email'].widget.attrs.update({
             'cols': '40',
             'class': 'mail',
-            'placeholder': "Your e-mail"
+            'placeholder': _(u"Ваш e-mail")
         })
         self.fields['name'].widget.attrs.update({
             'cols': '40',
             'class': 'name',
-            'placeholder': "Your name"
+            'placeholder': _(u"Ваше имя")
         })
 

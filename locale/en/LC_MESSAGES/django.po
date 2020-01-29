@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-23 22:33+0300\n"
+"POT-Creation-Date: 2020-01-30 02:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,18 @@ msgstr ""
 #: First/settings.py:131
 msgid "English"
 msgstr ""
+
+#: main/forms.py:19
+msgid "Ваше сообщение"
+msgstr "Your message"
+
+#: main/forms.py:24
+msgid "Ваш e-mail"
+msgstr "Your e-mail"
+
+#: main/forms.py:29
+msgid "Ваше имя"
+msgstr "Your name"
 
 #: templates/Portfolio/Portfolio.html:9
 msgid "Приветствую! Это моё портфолио!"
@@ -71,99 +83,94 @@ msgstr ""
 "beautifulSite. Quickly. Qualitatively. Reliably."
 
 #: templates/main/index.html:5
-#| msgid "Веб-разработчик"
-msgid "Веб разработчик Dimabytes"
-msgstr "Web-developer"
+msgid "Fullstack разработчик Dimabytes"
+msgstr "Fullstack developer Dimabytes"
 
-#: templates/main/index.html:45
-msgid "Веб-разработчик"
-msgstr "Web-developer"
+#: templates/main/index.html:44
+msgid "Fullstack разработчик"
+msgstr "Fullstack developer"
 
-#: templates/main/index.html:53
+#: templates/main/index.html:52
 msgid "Кто я?"
 msgstr "Who am I?"
 
-#: templates/main/index.html:56
-msgid "Я молодой и профессиональный веб-разработчик "
-msgstr "I am a young professional web developer."
+#: templates/main/index.html:55
+msgid "Я профессиональный fullstack разработчик "
+msgstr "I am a young professional fullstack developer."
+
+#: templates/main/index.html:55
+msgid "Опыт работы более 2 лет "
+msgstr "Over 2 year work experience"
 
 #: templates/main/index.html:56
-msgid "Занимаюсь веб-разработкой на протяжении года "
-msgstr "I have been active in web development for over 1 year"
-
-#: templates/main/index.html:57
 msgid "Могу выполнить Ваш заказ быстро и эффективно "
 msgstr "I can make your order quickly and efficiently."
 
-#: templates/main/index.html:57
-msgid ""
-"Слежу за новыми трендами в веб-разработке, и помогу Вам создать великолепный "
-"сайт! "
-msgstr ""
-"I follow new trends in web development and can help you in creating great "
-"sites!"
+#: templates/main/index.html:56
+msgid "Слежу за новыми трендами в веб-разработке"
+msgstr "I follow new trends in web development!"
 
-#: templates/main/index.html:63
+#: templates/main/index.html:62
 msgid "Мои навыки"
 msgstr "My skills"
 
-#: templates/main/index.html:66
+#: templates/main/index.html:65
 msgid "Помощь с настройкой:"
 msgstr "Help with setting up"
 
-#: templates/main/index.html:70
+#: templates/main/index.html:69
 msgid "Яндекс.Директ"
 msgstr "Yandex.Direct"
 
-#: templates/main/index.html:89
+#: templates/main/index.html:90
 msgid "А так-же:"
 msgstr "And also:"
 
-#: templates/main/index.html:91
-msgid "VK и Telegram боты"
-msgstr "VK and Telegram bots"
-
 #: templates/main/index.html:92
-msgid "Консольные скрипты на python"
-msgstr "Console scripts in python"
+msgid "VK, Telegram, TikTok боты"
+msgstr "VK and Telegram, TikTok bots"
 
-#: templates/main/index.html:101
-msgid "Последние проекты"
-msgstr "Last projects"
+#: templates/main/index.html:93
+msgid "Консольные скрипты на python, node"
+msgstr "Console scripts in python, node"
 
-#: templates/main/index.html:116
+#: templates/main/index.html:106
+msgid "Последние открытые для просмотра проекты"
+msgstr "Last open to view projects"
+
+#: templates/main/index.html:118
 msgid "Чтобы увидеть больше, Вы можете перейти в"
 msgstr "To see more you can go to the"
 
-#: templates/main/index.html:118
+#: templates/main/index.html:120
 msgid "портфолио"
 msgstr "portfolio"
 
-#: templates/main/index.html:123
+#: templates/main/index.html:125
 msgid "Свяжитесь со мной"
 msgstr "Contact me"
 
-#: templates/main/index.html:131
+#: templates/main/index.html:133
 msgid "Написать!"
 msgstr "Contact!"
 
-#: templates/main/index.html:146
+#: templates/main/index.html:148
 msgid "Спасибо за обращение! Я скоро Вам отвечу!"
 msgstr "Thanks for contacting me! I'll answer you soon!"
 
-#: templates/main/index.html:150
+#: templates/main/index.html:152
 msgid "Упс! Что то пошло не так :("
 msgstr "Ooops! Something went wrong :("
 
-#: templates/main/index.html:151
+#: templates/main/index.html:153
 msgid "Но вы всё ещё можете свзяаться со мной тут:"
 msgstr "But you still can contact with me here:"
 
-#: templates/main/index.html:152
+#: templates/main/index.html:154
 msgid "Почта: dimabytes@gmail.com"
 msgstr "E-mail: dimabytes@gmail.com"
 
-#: templates/main/index.html:154
+#: templates/main/index.html:156
 msgid "Ваше сообщение:"
 msgstr "Your message:"
 
@@ -1329,6 +1336,9 @@ msgstr ""
 #: venv/lib/python3.7/site-packages/modeltranslation/widgets.py:25
 msgid "None"
 msgstr ""
+
+#~ msgid "Занимаюсь веб-разработкой на протяжении года "
+#~ msgstr "I have been active in web development for over 1 year"
 
 #~ msgid "Профессиональный верстальщик Санкт-Петербург"
 #~ msgstr "Professional layout designer St. Petersburg"

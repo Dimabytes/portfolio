@@ -2,10 +2,9 @@
 {% load staticfiles %}
 {% load i18n %}
 {% block title %}
-    {% trans 'Веб разработчик Dimabytes' %}
+    {% trans 'Fullstack разработчик Dimabytes' %}
 {% endblock %}
 {% block style %}
-    <meta name='freelancehunt' content='82f175bbceeaeec' />
 {% endblock %}
 {% block script %}
     <script type="text/javascript">
@@ -42,7 +41,7 @@
 
         <section class="page1" style="font-family: 'Neucha', cursive;">
             <h1>Dimabytes</h1>
-            <h2>{% trans 'Веб-разработчик' %}</h2>
+            <h2>{% trans 'Fullstack разработчик' %}</h2>
             <div class="lang">
                 <a id="RU" href="/">RU</a>
                 <a id="EN" href="/en/">EN</a>
@@ -53,8 +52,8 @@
             <h1 class="up_head">{% trans 'Кто я?' %} <i class="far fa-address-card"></i></h1>
             <div class="who">
                 <img src="{% static 'images/Me.png' %}" id="Me">
-                <p id="WhoText">{% trans 'Я молодой и профессиональный веб-разработчик ' %}<br> {% trans 'Занимаюсь веб-разработкой на протяжении года ' %}<br>
-                    {% trans 'Могу выполнить Ваш заказ быстро и эффективно ' %}<br>{% trans 'Слежу за новыми трендами в веб-разработке, и помогу Вам создать великолепный сайт! ' %}
+                <p id="WhoText">{% trans 'Я профессиональный fullstack разработчик ' %}<br> {% trans 'Опыт работы более 2 лет ' %}<br>
+                    {% trans 'Могу выполнить Ваш заказ быстро и эффективно ' %}<br>{% trans 'Слежу за новыми трендами в веб-разработке' %}
                 </p>
             </div>
         </section>
@@ -69,6 +68,7 @@
                         <li>Prestashop</li>
                         <li>{% trans 'Яндекс.Директ' %}</li>
                         <li>Google AdWords</li>
+                        <li>VK Pixel</li>
                     </ul>
                 </div>
                 <div class="skill">
@@ -77,20 +77,25 @@
                         <li>Python</li>
                         <li>Django</li>
                         <li>HTML5, CSS3</li>
-                        <li>SCSS</li>
-                        <li>Javascript, Jquery</li>
-                        <li>Vue.js</li>
-                        <li>Canvas, Konva</li>
-                        <li>Git</li>
+                        <li>SASS, SCSS</li>
+                        <li>Javascript(ES6)</li>
+                        <li>Jquery, Canvas, Konva</li>
+                        <li>Node</li>
+                        <li>React</li>
+                        <li>Express</li>
                     </ul>
                 </div>
 
                 <div class="skill">
                     <p>{% trans 'А так-же:' %}</p>
                     <ul>
-                        <li>{% trans 'VK и Telegram боты' %}</li>
-                        <li>{% trans 'Консольные скрипты на python' %}</li>
-                        <li>Photoshop, Illustrator, InDesign</li>
+                        <li>{% trans 'VK, Telegram, TikTok боты' %}</li>
+                        <li>{% trans 'Консольные скрипты на python, node' %}</li>
+                        <li>Reverse engineering API</li>
+                        <li>Photoshop, Illustrator, Corel Draw</li>
+                        <li>Swagger, Postman</li>
+                        <li>Git, Markdown</li>
+                        <li>Jira, Teamwork, Trello</li>
                     </ul>
                 </div>
 
@@ -98,7 +103,7 @@
         </section>
         <section class="page4">
             <div class="wrap_page_4">
-                <h1 class="up_head text_4">{% trans 'Последние проекты' %} <i class="fas fa-briefcase"></i></h1>
+                <h1 class="up_head text_4">{% trans 'Последние открытые для просмотра проекты' %} <i class="fas fa-briefcase"></i></h1>
                 <div id="block-for-slider">
                     <div id="viewport">
                         <ul id="slidewrapper">
@@ -107,9 +112,6 @@
                             {% endfor %}
                         </ul>
                         <ul id="nav-btns">
-                            {% for foo in last_works %}
-                                <li class="slide-nav-btn"></li>
-                            {% endfor %}
                         </ul>
                     </div>
                 </div>
