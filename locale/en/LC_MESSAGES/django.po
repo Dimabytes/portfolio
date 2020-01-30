@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-30 02:16+0300\n"
+"POT-Creation-Date: 2020-01-30 03:13+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,16 +71,13 @@ msgid "Описание"
 msgstr "Description"
 
 #: templates/base/base.html:23
-msgid "Вертсальщик, Веб-разработчик, профессионал, Dimabytes, Санкт-Петербург"
-msgstr "Maker, Web Developer, Professional, Dimabytes, St. Petersburg"
+#| msgid "Fullstack разработчик Dimabytes"
+msgid "Dimabytes, Full stack, Веб-разработчик, dimabytes, Дмитрий Стовпец"
+msgstr "Dimabytes, Full stack, Web-developer, dimabytes, Dmitry Stovpets"
 
 #: templates/base/base.html:25
-msgid ""
-"Я - профессиональный веб-разработчик. Помогу вам в создании прекрасного "
-"сайта. Быстро. Качественно. Надёжно."
-msgstr ""
-"I am a professional web developer. I will help you in creating the "
-"beautifulSite. Quickly. Qualitatively. Reliably."
+msgid "Dimabytes. Fullstack разрабочик, опыт более 2 лет, удаленная работа"
+msgstr "Dimabytes. Fullstack developer, more than 2 years work experience, telework"
 
 #: templates/main/index.html:5
 msgid "Fullstack разработчик Dimabytes"
@@ -134,43 +131,43 @@ msgstr "VK and Telegram, TikTok bots"
 msgid "Консольные скрипты на python, node"
 msgstr "Console scripts in python, node"
 
-#: templates/main/index.html:106
+#: templates/main/index.html:107
 msgid "Последние открытые для просмотра проекты"
 msgstr "Last open to view projects"
 
-#: templates/main/index.html:118
+#: templates/main/index.html:119
 msgid "Чтобы увидеть больше, Вы можете перейти в"
 msgstr "To see more you can go to the"
 
-#: templates/main/index.html:120
+#: templates/main/index.html:121
 msgid "портфолио"
 msgstr "portfolio"
 
-#: templates/main/index.html:125
+#: templates/main/index.html:126
 msgid "Свяжитесь со мной"
 msgstr "Contact me"
 
-#: templates/main/index.html:133
+#: templates/main/index.html:134
 msgid "Написать!"
 msgstr "Contact!"
 
-#: templates/main/index.html:148
+#: templates/main/index.html:149
 msgid "Спасибо за обращение! Я скоро Вам отвечу!"
 msgstr "Thanks for contacting me! I'll answer you soon!"
 
-#: templates/main/index.html:152
+#: templates/main/index.html:153
 msgid "Упс! Что то пошло не так :("
 msgstr "Ooops! Something went wrong :("
 
-#: templates/main/index.html:153
+#: templates/main/index.html:154
 msgid "Но вы всё ещё можете свзяаться со мной тут:"
 msgstr "But you still can contact with me here:"
 
-#: templates/main/index.html:154
+#: templates/main/index.html:155
 msgid "Почта: dimabytes@gmail.com"
 msgstr "E-mail: dimabytes@gmail.com"
 
-#: templates/main/index.html:156
+#: templates/main/index.html:157
 msgid "Ваше сообщение:"
 msgstr "Your message:"
 
@@ -1336,6 +1333,17 @@ msgstr ""
 #: venv/lib/python3.7/site-packages/modeltranslation/widgets.py:25
 msgid "None"
 msgstr ""
+
+#~ msgid ""
+#~ "Вертсальщик, Веб-разработчик, профессионал, Dimabytes, Санкт-Петербург"
+#~ msgstr "Maker, Web Developer, Professional, Dimabytes, St. Petersburg"
+
+#~ msgid ""
+#~ "Я - профессиональный веб-разработчик. Помогу вам в создании прекрасного "
+#~ "сайта. Быстро. Качественно. Надёжно."
+#~ msgstr ""
+#~ "I am a professional web developer. I will help you in creating the "
+#~ "beautifulSite. Quickly. Qualitatively. Reliably."
 
 #~ msgid "Занимаюсь веб-разработкой на протяжении года "
 #~ msgstr "I have been active in web development for over 1 year"
