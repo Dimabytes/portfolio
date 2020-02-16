@@ -74,15 +74,9 @@ class Contact(View):
                 'text': text,
                 'name': name,
             }
-            data_for_user = {
-                'name': name,
-            }
-            if request.LANGUAGE_CODE == 'ru':
-                mail('templates/mails/mail_to_ru.html', data_for_user, 'Dimabytes', [email])
-            else:
-                mail('templates/mails/mail_to_en.html', data_for_user, 'Dimabytes', [email])
             mail('templates/mails/mail.html', data_for_me, 'Запрос на сайте', ['dimabytes@gmail.com'])
-            return JsonResponse(data_for_user)
+            return HttpResponse('done')
+
         data = {
             'limit': False
         }

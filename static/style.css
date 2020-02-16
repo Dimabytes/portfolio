@@ -956,7 +956,25 @@ form{
 @media screen and (max-width: 1000px) {
     .page1, .page2, .page3, .page4, .page5{
         position: relative;
-        height: 850px;
+    }
+    .page1{
+        height: 100vh;
+    }
+    .page2{
+        height: 550px;
+    }
+
+    .page3{
+        height: 1100px;
+    }
+
+    .page4{
+        height: 550px;
+        min-height: unset;
+    }
+
+    .page5{
+        height: 100vh;
     }
 
     .who img{
